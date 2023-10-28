@@ -1,10 +1,3 @@
-Written by Scott Kildall
-
-www.kildall.com
-
-Processing-based utility to map data points to a map and have them be different colors/shades.
-
-
 Datasets format
 
 - put data file into root folder of Processing sketch and call it: data_input.csv
