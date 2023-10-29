@@ -67,11 +67,8 @@ void setup() {
   
   numYears = endYear - startYear;
   
-  
-  
   homeX = map(homeLon, (minLon - lonAdjust), (maxLon + lonAdjust), margin, width - margin);
   homeY = map(homeLat, (minLat - latAdjust), (maxLat + latAdjust), height - margin, margin) * 1.3333 - 100;
-  
   
   println(homeX);
   println(homeY);
@@ -96,6 +93,9 @@ void draw() {
   
   //-- draw data
   drawAllData();
+  
+  rectMode(CENTER);
+  ellipseMode(CENTER);
   
   //-- done recording to PDF, set flag to false and flash white to indicate that we have recorded
   if( recordToPDF ) {
@@ -167,11 +167,17 @@ void drawAllData() {
     
     float x = row.getFloat("Longitude");
     float y = row.getFloat("Latitude");
+    
+    //-- OUR CUSTOM ROTUINES GO HERE
     float s = getSizeData(row);       // size
+    
+    
+    // some examples
     //int c = getCategoryData(row);   // category 
     int year = getYearData(row);
    
     //-- draw data point here
+    // MODIFY THIS FUNCTION
     drawDatum(x,y, s, year);
   }
   
@@ -189,11 +195,6 @@ float getSizeData(TableRow row) {
       //-- there IS size column
       s = row.getFloat("Size");
       
-      //-- filter so we don't show small prisons
-      if( s > 10 ) {
-        //-- decrease size here
-        s = s / 100;
-      }
     } catch (Exception e) {
       //-- there is NO size column in this data set
       //-- no size coulumn, set s to plottable value
@@ -238,11 +239,13 @@ int getYearData(TableRow row) {
 
 
 void drawDatum(float x, float y, float dataSize, int year) {
-  
+  //println(dataSize);
   float drawX = map(x, (minLon - lonAdjust), (maxLon + lonAdjust), margin, width - margin);
   float drawY = map(y, (minLat - latAdjust), (maxLat + latAdjust), height - margin, margin) * 1.3333 - 100;
   
   
+  //-- some year code mapping examples
+/*
   //-- you can draw a rectangle or other shapes here
   int minRed = 100;
   int maxRed = 255;
@@ -250,11 +253,25 @@ void drawDatum(float x, float y, float dataSize, int year) {
   //-- 1st parameter = data value
   //-- 2nd & 3rd parameter = INPUT range
   //-- 4th and 5th parameter = OUTPUT range
+  
   float r = map(year, startYear, endYear, minRed, maxRed);
   
+
+  // red
   fill(r,0,0);
+  */
   
-  rect(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
+  fill(0,212,255);
+  
+  // adjust our size 
+  dataSize = dataSize / 15000;
+   
+  //-- draw reactangle
+  //rect(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
+  
+  // draw circle
+  ellipse(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
+  
 }
 
 void keyPressed() {
