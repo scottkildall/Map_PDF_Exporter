@@ -264,7 +264,8 @@ void drawDatum(float x, float y, float dataSize, int year) {
   fill(0,212,255);
   
   // adjust our size 
-  dataSize = dataSize / 15000;
+ // dataSize = dataSize / 15000;
+   dataSize = 5;
    
   //-- draw reactangle
   //rect(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
