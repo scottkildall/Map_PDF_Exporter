@@ -63,7 +63,8 @@ void setup() {
   //-- set to something like (2400,2400) for a large image
   size(800,800);
   
-  loadData("data_input.csv");
+ 
+  loadData(sketchPath() + "/" +  "data_input.csv");
   
   numYears = endYear - startYear;
   
