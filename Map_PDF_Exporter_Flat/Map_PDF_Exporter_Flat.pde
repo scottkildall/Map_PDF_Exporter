@@ -240,6 +240,14 @@ int getYearData(TableRow row) {
 
 
 void drawDatum(float x, float y, float dataSize, int year) {
+  
+  // Bigfoot exmaple
+  int lastYear = 2016;
+  int numYears = lastYear - year;
+
+ 
+  // numYears is in range 75 years
+  
   //println(dataSize);
   float drawX = map(x, (minLon - lonAdjust), (maxLon + lonAdjust), margin, width - margin);
   float drawY = map(y, (minLat - latAdjust), (maxLat + latAdjust), height - margin, margin) * 1.3333 - 100;
@@ -262,11 +270,20 @@ void drawDatum(float x, float y, float dataSize, int year) {
   fill(r,0,0);
   */
   
-  fill(0,212,255);
+  //-- This is our fill color
+  // YEAR EXAMPLE
+  //fill(255,50,50, 255-(4*numYears));
+  fill(255,50,50);
+  
+  //-- This is the stroke weight
+  strokeWeight(0);
+  
+  //-- This is the color
+  stroke(128,128,128);
   
   // adjust our size 
  // dataSize = dataSize / 15000;
-   dataSize = 5;
+   dataSize = 10;
    
   //-- draw reactangle
   //rect(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 

@@ -1,170 +1,662 @@
-Intersection,Latitude,Longitude,Size
-Broadway & Osgood,37.7983359,-122.4030815,75000
-Grant & Bush,37.7905548,-122.4056239,75000
-Grant & California,37.792486,-122.4059615,75000
-Grant & Washington,37.7951646,-122.4065048,75000
-Grant & Pacific,37.7969186,-122.4068665,75000
-Grant & Vallejo,37.7987868,-122.4072332,75000
-Grant & Union,37.800664,-122.4076098,75000
-Grant & Greenwich,37.8025266,-122.40799,75000
-Jones & Jackson,37.7950197,-122.4148518,75000
-Kearney & Sacramento,37.7936042,-122.4046467,75000
-Kearney & Merchant,37.7749295,-122.4194155,75000
-Leavenworth & Union,37.7994171,-122.4174331,90000
-Mason & California,37.7918653,-122.4108305,87000
-Montgomery & Pacific,37.7973166,-122.4037026,20000
-Montgomery & Washington,37.7955349,-122.4033473,16000
-Montgomery & Commercial,37.7942308,-122.4030891,17500
-Montgomery & California,37.792877,-122.4028272,32500
-Kearney & Post,37.7889203,-122.4037102,13000
-Kearney & Bush,37.7907632,-122.4040735,19200
-Powell & Green,37.7993195,-122.4106758,20350
-Powell & Pacific,37.7965168,-122.4101149,13700
-Powell & Bush,37.7901705,-122.4088198,34460
-Battery & Bush,37.7913234,-122.3996171,75000
-Powell & Washington,37.794638,-122.409637,13750
-Sansome & Pacific,37.7975103,-122.4020586,25750
-Stockton & Pacific,37.7967142,-122.4084476,19000
-Stockton & Vallejo,37.7985926,-122.408838,9600
-Stockton & Union,37.8004633,-122.4092244,26100
-Taylor & Clay,37.7934572,-122.4128401,34660
-Van Ness & Bay,37.729202,-122.392238,75000
-Capp & 18th,37.7619061,-122.4183084,75000
-Capp & 15th,37.7667438,-122.4187654,75000
-Dolores & 18th,37.7614288,-122.4260772,75000
-Dolores & 16th,37.764638,-122.4264921,75000
-Dolores & 14th,37.7678672,-122.4268044,75000
-8th & Brannan,37.7713302,-122.4054307,75000
-8th & Townsend,37.770065,-122.4039627,75000
-Folsom & 13th,37.7696889,-122.4155521,75000
-Folsom & 16th,37.7653296,-122.4153468,75000
-Fulton & Laguna,37.778335,-122.4266661,75000
-Kansas & 15th,37.7673323,-122.4037807,75000
-Howard & 7th,37.7779908,-122.4093978,75000
-Laguna & Market,37.7706516,-122.42488,75000
-Market & Valencia,37.7725376,-122.4227233,75000
-Mission & 7th,37.7792124,-122.4109462,75000
-Mission & Otis,37.7731599,-122.4186079,75000
-Sanchez & Duboce,37.7693209,-122.43131,75000
-Van Ness & Market,37.729202,-122.392238,75000
-Van Ness & Grove,37.729202,-122.392238,75000
-Van Ness & Golden Gate,37.729202,-122.392238,75000
-Van Ness & Ellis,37.729202,-122.392238,75000
-Webster & Waller,37.7713924,-122.4286167,75000
-5th & Bluxome,37.775981,-122.3980103,75000
-5th & Bryant,37.7778192,-122.4003128,75000
-5th & Harrison,37.779049,-122.4018621,75000
-5th & Folsom,37.7802841,-122.4034164,75000
-1st & Howard,37.7885557,-122.3960306,75000
-1st & Folsom,37.7873347,-122.3945241,75000
-1st & Harrison,37.7860527,-122.3929936,95200
-4th & Harrison,37.7808115,-122.3996352,75000
-Howard & Beale,37.7899293,-122.3942854,75000
-Powell & Ellis,37.7855186,-122.4078883,19200
-2nd & Folsom,37.7855505,-122.3967177,34000
-6th & Howard,37.779741,-122.4071746,75000
-6th & Folsom,37.7785241,-122.4056342,75000
-6th & Harrison,37.7772879,-122.4040802,75000
-4th & Bryant,37.7792117,-122.3992902,75000
-Mariposa & Missouri,37.7638675,-122.3966891,75000
-Broadway & Scott,37.7936496,-122.439849,75000
-California & Buchanan,37.7893227,-122.4305724,75000
-Clay & Laurel,37.7886452,-122.4504825,75000
-Divisadero & Washington,37.7907651,-122.4409588,75000
-Geary & Gough,37.785286,-122.4246999,75000
-Geary & Laguna,37.7848872,-122.4279882,75000
-Geary & Webster,37.7846656,-122.4311126,75000
-Geary & Scott,37.7836401,-122.4378439,75000
-Green & Broderick,37.7951018,-122.4435658,75000
-Greenwich & Webster,37.7991698,-122.4342719,75000
-Greenwich & Baker,37.7976919,-122.4457715,75000
-Pacific & Baker,37.7920978,-122.4446466,75000
-Sacramento & Baker,37.7885743,-122.4439266,75000
-Sutter & Octavia,37.786935,-122.4267194,75000
-Union & Steiner,37.7968852,-122.4371254,75000
-Union & Laguna,37.7977287,-122.4305272,75000
-Vallejo & Webster,37.7954405,-122.4335472,75000
-Broderick & Fulton,37.7766543,-122.4398489,75000
-Broderick & Post,37.784108,-122.441349,75000
-Castro & 14th,37.7673433,-122.4355975,75000
-Cole & Alma,37.7632054,-122.4494374,75000
-Divisadero & Fell,37.7740721,-122.4376238,75000
-Divisadero & Eddy,37.7806076,-122.4388662,75000
-Lyon & Bush,37.7855489,-122.44502,75000
-Lyon & Golden Gate,37.7781002,-122.4435103,75000
-Masonic & Frederick,37.7674368,-122.4446996,75000
-Masonic & Oak,37.7720991,-122.4456968,75000
-Parker & Fulton,37.7750097,-122.4528496,75000
-Shrader & Frederick,37.7665919,-122.451302,75000
-Shrader & Page,37.7703179,-122.452059,75000
-Williard & Belmont,37.7626769,-122.4540022,75000
-Chenery & Surrey,37.7356226,-122.4386812,75000
-Church & 23rd,37.7532962,-122.427583,75000
-Diamond & 19th,37.7591627,-122.437024,75000
-Diamond & 28th,37.7447497,-122.4356727,75000
-Diamond & Bosworth,37.7336073,-122.4341563,75000
-Dolores & 30th,37.7422387,-122.4241773,75000
-Dolores & 28th,37.7454398,-122.4244851,75000
-Dolores & 26th,37.7486439,-122.4249379,75000
-Dolores & 24th,37.7518433,-122.4250874,75000
-Dolores & 22nd,37.7550407,-122.4255405,75000
-Dolores & 20th,37.7582274,-122.4257136,75000
-Dolores & 14th,37.7678672,-122.4268044,75000
-Douglass & Elizabeth,37.7518279,-122.438551,75000
-Eureka & 21st,37.7555343,-122.4377752,75000
-Guerrero & Cumberland,37.7591752,-122.42365,63600
-Harrison & 18th,37.7616092,-122.4127681,75000
-19th & Folsom,37.7605032,-122.4148753,89092
-Noe & Hill,37.7554299,-122.432246,75000
-Noe & 24th,37.7514351,-122.4318659,75000
-Noe & 29th,37.7434325,-122.4311019,75000
-Preceta & Alabama,37.7749295,-122.4194155,75000
-Shotwell & 22nd,37.7556376,-122.4154953,70700
-Bryant & 21st,37.7576033,-122.4095917,75000
-York & 19th,37.7605476,-122.4090416,75000
-York & 22nd,37.7560549,-122.4085016,75000
-Bryant & 26th,37.7496085,-122.4088438,75000
-Andover & Crescent,37.7348938,-122.41683,50398
-Arguello & Clement,37.7832086,-122.4590028,75000
-California & Commonwealth,37.786103,-122.4558677,75000
-Geary & 5th,37.7811398,-122.4632202,75000
-34th & Balboa,37.7758619,-122.4941117,55666
-41st & Balboa,37.7755178,-122.5016071,55667
-Funston & California,37.7844699,-122.4720613,55665
-30th & Geary,37.7797852,-122.4900514,55665
-38th & Geary,37.779494,-122.4986695,55666
-46th & Geary,37.7790692,-122.5072403,55667
-Irving & 5th,37.7642329,-122.4620274,75000
-Judah & 47th,37.7603806,-122.506999,75000
-Judah & 9th,37.7622377,-122.4661812,75000
-Vicente & 43rd,37.7381873,-122.501156,55668
-Lakeview & Josiah,37.717768,-122.453378,75000
-Plymouth & Sadowa,37.71232,-122.456045,75000
-Vienna & Persia,37.7204757,-122.4303979,75000
-3rd & Kirkwood,37.7380116,-122.389678,45000
-Kansas & Army,37.7749295,-122.4194155,75000
-Kansas & 20th,37.7596226,-122.4030612,75000
-Kansas & 23rd,37.754512,-122.402558,75000
-3rd & Oakdale,37.734859,-122.3907657,34000
-Fitzgerald & Hawes,37.7199213,-122.3894617,50396
-Gambier & Felton,37.7256688,-122.4213752,75000
-Hamilton & Dwight,37.7224892,-122.408034,75000
-Ingalls & Shafter,37.72786,-122.385119,50397
-Peninsula & Blanken,37.7116103,-122.3990751,50395
-Sunnydale & Sawyer,37.7116594,-122.4150783,50395
-3rd & Thomas,37.7308604,-122.3921883,50397
-Connecticut & 20th,37.759969,-122.3972531,75000
-Pennsylvania & 22nd,37.7576593,-122.3931197,75000
-South Van Ness & 20th,37.761968,-122.4172209,74292
-San Bruno & 25th,37.78539,-122.411,75000
-Van Ness & Post,37.729202,-122.392238,75000
-Van Ness & Pine,37.729202,-122.392238,75000
-Van Ness & Washington,37.729202,-122.392238,75000
-Van Ness & Broadway,37.729202,-122.392238,75000
-Van Ness & Union,37.729202,-122.392238,75000
-Van Ness & Lombard,37.729202,-122.392238,75000
-North Point & Divisadero,37.80278,-122.44341,55664
-Buena Vista East & Buena Vista Terrace,37.7678936,-122.4399419,75000
-Legion of Honor West,37.785174,-122.500762,75000
-Legion of Honor East,37.784428,-122.500188,75000
-Civic Center,37.779579,-122.413727,243000
+creation_date,accession_number,artist,display_title,Latitude,Longitude
+1814,1928.2,"Bullock, George",William Shakespeare,37.76698814,-122.4665455
+1880,1924.1,"Rodin, Auguste",The Thinker,37.781705,-122.496671
+1881,1893.1,"Geefs, Guillaumo",Leonitus (Roman Gladiator),37.77142602,-122.468789
+1885,1885.1.a-e,"Happersberger, Frank",James A. Garfield (1831-1881),37.77242694,-122.4686445
+1886,1886.1,"Conrads, Carl H.",General Henry W. Halleck (1815-1872),37.77130004,-122.45917
+1887,1887.1.a-f,"Story, William Wetmore",Francis Scott Key (1780-1843),37.76961583,-122.4677186
+1889,1889.1,"Tilden, Douglas",Ball Thrower,37.77130004,-122.45917
+1890,1892.1,"French, Daniel Chester",Thomas Starr King (1824-1864),37.77245962,-122.4665353
+1892,1894.2.a-b,"Shields-Clarke, Thomas",The Cider Press,37.77089834,-122.4683123
+1894,1894.4.a-o,"Happersberger, Frank",Pioneer Monument  (James Lick Monument),37.77959004,-122.41676
+1894,1897.2,"Porter, Bruce",Robert Louis Stevenson (1850-1894) Memorial,37.79523004,-122.4058099
+1897,1897.1,"Tilden, Douglas",Native Sons Monument (Admission Day Monument),37.78877006,-122.40199
+1898,1906.1,"Perry, R. Hinton",Lion,37.77142602,-122.468789
+1899,1899.1,"Aitken, Robert Ingersoll",Spandrels on Spreckles Temple of Music,37.76961583,-122.4677186
+1900,1954.18,Taddeo,Fountain of the Tortoises,37.79161006,-122.41246
+1901,1902.1,"Aitken, Robert Ingersoll","The Dewey Monument (Admiral George Dewey, 1837-1917)",37.78793099,-122.4075
+1901,1901.2,"Tilden, Douglas",Mechanics Monument (Peter Donahue-1829-1885),37.79105002,-122.3991399
+1903,1903.2.1-2,"Putnam, Arthur",Sphinx,37.77142602,-122.468789
+1903,1903.1,"Tilden, Douglas","California Volunteers, Spanish American War, 1898",37.76920004,-122.4269099
+1904,1903.2.2,"Aitken, Robert Ingersoll",William McKinley,37.77362002,-122.4409299
+1904,1903.2.1,"Cummings, M. Earl",Man Drinking Water,37.80024003,-122.4108299
+1905,1905.1,"Cummings, M. Earl",Sun Dial,37.77142602,-122.468789
+1906,1904.2.a-b,"Cummings, M. Earl",Robert Burns (1759-1796),37.77260003,-122.4658099
+1906,1907.1,"Tilden, Douglas",Padre Junipero Serra (1713-1784),37.77089834,-122.4683123
+1908,1908.1,"Cummings, M. Earl",Bear and Lion,37.77338005,-122.4658799
+1908,1907.2,"Cummings, M. Earl",Lion,37.77338005,-122.4658799
+1908,1908.3.a-b,"Cummings, M. Earl",Bear,37.77338005,-122.4658799
+1910,1908.3.b,"Patigian, Haig",Luisa Tetrazzini (1874-1940) Plaque,37.78766005,-122.4034599
+1914,1908.3.a,"Grafly, Charles",Pioneer Mother,37.77121006,-122.4738899
+1916,1914.1,"Connor, Gerome",Robert Emmet (1778-1803),37.769883,-122.466863
+1916,1910.1,"Mora, Joseph Jacinto",Miguel Cervantes (1547-1616),37.77259006,-122.4665199
+1917,1916.1.a-c,"Cummings, M. Earl",Pool of Enchantment,37.77142602,-122.468789
+1921,1919.1,"Cummings, M. Earl",Dennis T. Sullivan (1852-1906) Plaque,37.789968,-122.411599
+1921,1917.1.b,"Patigian, Haig",General John J. Pershing (1860-1948),37.76961583,-122.4677186
+1923,1917.1.a-b,"Cummings, M. Earl",Rideout Fountain,37.76974004,-122.4695899
+1923,1921.1,"Dixon, Maynard",Landscape,37.78750301,-122.410199
+1923,1917.1.a,"Walters, Edgar",Sigmund Steinhart,37.769883,-122.466863
+1923,1922.1,"Walters, Edgar",Ignatz Steinhart,37.769883,-122.466863
+1923,1923.2.2,"Walters, Edgar",Ignatz and Sigmund Steinhart (1840-1917),37.769883,-122.466863
+1928,1923.1,"Cummings, M. Earl",Carl G. Larsen,37.74119002,-122.4755699
+1928,1923.3,"Cummings, M. Earl",Doughboy,37.77260003,-122.4658099
+1932,1942.9,"Patigian, Haig",Volunteer Fireman Memorial,37.80084101,-122.410012
+1932,1942.5,"Schnier, Jacques",California Theater Plaque,37.791002,-122.404849
+1934,1934.4.a,"Albro, Maxine",California,37.80231199,-122.405884
+1934,1934.12.b,"Arnautoff, Victor Mikhail",City Life,37.80231199,-122.405884
+1934,1934.11,"Berlandina, Jane",Home Life,37.80231199,-122.405884
+1934,1942.4,"Bertrand, Raymond",Meat Industry,37.80231199,-122.405884
+1934,1934.18.a-b,"Boynton, Raymond",Animal Force and Machine Force,37.80231199,-122.405884
+1934,1934.28.5,"Chesse, Ralph A.",Children at Play,37.80231199,-122.405884
+1934,1934.8.b,"Cuneo, Rinaldo",Bay Area Hills,37.80231199,-122.405884
+1934,1934.19.c,"Cunningham, Ben F.",Outdoor Life,37.80231199,-122.405884
+1934,1933.41,"Dean, Mallette (Harold)",Scientist-Inventor,37.80231199,-122.405884
+1934,1934.26,"Dean, Mallette (Harold)",Stockbroker and Scientist-Inventor,37.80231199,-122.405884
+1934,1934.24,"Dean, Mallette (Harold)",Stockbroker,37.80231199,-122.405884
+1934,1936.4.a,"Forbes, Helen",Noah and His Ark (The Landing of the Ark),37.73541003,-122.5068199
+1934,1934.1,"Hall, Parker",Collegiate Sports,37.80231199,-122.405884
+1934,1934.1,"Hamlin, Edith",Hunting in California,37.80231199,-122.405884
+1934,1934.4.b,"Harris, George",Banking and the Law,37.80231199,-122.405884
+1934,1934.7,"Hesthal, William",Railroad and Shipping,37.80231199,-122.405884
+1934,1934.17,"Howard, John Langley",California Industrial Scenes,37.80231199,-122.405884
+1934,1932.1,"Labaudt, Lucien",Powell Street,37.80231199,-122.405884
+1934,1934.12.a,"Langdon, Gordon",California Agricultural Industry,37.80231199,-122.405884
+1934,1934.15,"Moya del Pino, Jose","San Francisco Bay, North",37.80231199,-122.405884
+1934,1934.23,"Oldfield, Otis",San Francisco Bay,37.80231199,-122.405884
+1934,1934.2,"Oldfield, Otis",Bay Area Map,37.80231199,-122.405884
+1934,1934.27,"Oldfield, Otis",Seabirds (Seagulls),37.80231199,-122.405884
+1934,1934.19.a,"Oldfield, Otis",Seabirds (Pelicans),37.80231199,-122.405884
+1934,1934.19.b,"Oldfield, Otis",Seabirds and Bay Area Map,37.80231199,-122.405884
+1934,1934.4.a-b,"Olmsted, Jr., Frederick Law",Power,37.80231199,-122.405884
+1934,1934.8.a-b,"Puccinelli, Dorothy Wagner",Noah and His Ark (Building the Ark),37.73541003,-122.5068199
+1934,1934.12.a-b,"Puccinelli, Dorothy Wagner and Forbes, Helen",Noah and His Ark,37.73541003,-122.5068199
+1934,1934.22,"Scheuer, Suzanne",Newsgathering,37.80231199,-122.405884
+1934,1934.3,"Stackpole, Ralph",Industries of California,37.80231199,-122.405884
+1934,1942.8,"Terada, Edward Takeo",Sports,37.80231199,-122.405884
+1934,1934.6,"Vidar, Frede",Department Store,37.80231199,-122.405884
+1934,1934.16,"Wessels, Glenn","Fire, Earth, Water, Air, The Professions",37.748793,-122.455811
+1934,1934.2,"Wessels, Glenn",The Professions,37.748793,-122.455811
+1934,1934.21,"Wight, Clifford",Farmer,37.80231199,-122.405884
+1934,1934.28.1-5,"Wight, Clifford",Surveyor and Ironworker,37.80231199,-122.405884
+1934,1934.5,"Wight, Clifford",Ironworker,37.80231199,-122.405884
+1934,1934.13,"Wight, Clifford",Cowboy,37.80231199,-122.405884
+1934,1934.9,"Wight, Clifford",Surveyor,37.80231199,-122.405884
+1934,1934.8.a,"Wight, Clifford",Farmer and Cowboy,37.80231199,-122.405884
+1934,1934.14,"Zakheim, Bernard Baruch",Library,37.80231199,-122.405884
+1935,1936.4.a-d,"Bufano, Beniamino",Horse and Rider (St. Francis on Horseback),37.7849495,-122.4416025
+1935,1934.18.b,"Bufano, Beniamino",Cat,37.76665001,-122.42229
+1935,1934.25,"Bufano, Beniamino",Butterfly,37.76665001,-122.42229
+1935,1936.4.c,"Moya del Pino, Jose",Murals for the Acme Beer Company (A Family Picnic),37.77813313,-122.4287419
+1935,1934.18.a,"Moya del Pino, Jose",Murals for the Acme Beer Company (Making and Bottling Beer),37.77813313,-122.4287419
+1935,1934.19.a-c,"Moya del Pino, Jose",Murals for the Acme Beer Company (The Gathering of the Hops),37.77813313,-122.4287419
+1935,1973.26.a,"Moya del Pino, Jose",Murals for Acme Beer Company,37.77813313,-122.4287419
+1936,1942.13,"Bufano, Beniamino",Sun Yat-Sen,37.79245127,-122.4054364
+1936,1973.26.c,"Labaudt, Lucien",People and Places of San Francisco,37.76981502,-122.510542
+1938,1973.26.a-c,"Edstrom, David",Florence Nightingale (1820-1910),37.748793,-122.455811
+1938,1942.11,"Forbes, Helen",Noah and His Ark (The Arkâ€™s Passengers Disembark),37.73541003,-122.5068199
+1938,1973.26.b,"Ilyin, Peter",Untitled  (Two Views of San Francisco),37.779577,-122.421017
+1938,1942.12,"Puccinelli, Dorothy Wagner",Noah and His Ark (Loading of the Animals),37.73541003,-122.5068199
+1938,1936.1,"Puccinelli, Raymond (Raimondo)",Guglielmo Marconi (1874-1937) Memorial Plaque,37.80352003,-122.4062799
+1939,1940.15.1,"Bufano, Beniamino",Peace,37.71468521,-122.4789528
+1939,1936.2,"Carter, Dudley C.",Goddess of the Forest,37.72382699,-122.449584
+1939,1938.1,"Huntington, Clara",St. Francis of Assisi (Feeding the Birds),37.76890202,-122.470886
+1939,1936.4.b,"Moxom, Jack",Sarah B. Cooper Memorial,37.76719006,-122.4586799
+1939,1936.4.d,"Stackpole, Ralph",Edmund Godchaux (1849-1939),37.77939476,-122.4184766
+1940,1940.15.2,"Olmsted, Jr., Frederick Law",Edison,37.72382699,-122.449584
+1940,1939.1,"Runyon, Hal Bayard",Andrew Furuseth (1854-1938),37.78656298,-122.393014
+1940,1940.1,"Schweigardt, Frederick W.",Joseph B. Strauss (1870-1938) Memorial,37.80648004,-122.4752099
+1940,1938.2,"Volz, Herman",Education (Organic and Inorganic Science),37.72382699,-122.449584
+1941,1956.3,"Olmsted, Jr., Frederick Law",Education (Theory and Science),37.72382699,-122.449584
+1941,1939.2,"Olmsted, Jr., Frederick Law",Leonardo da Vinci,37.72382699,-122.449584
+1941,1958.26,"Patigian, Haig",William C. Ralston (1826-1875) Monument,37.80711244,-122.4379374
+1949,1940.7.b,"Quilici, Gladys Nevada",Frank Marini (1862-1952),37.80117004,-122.4109999
+1952,1940.7.a-b,"Leong, James",100 Years of Progress of Chinese in America,37.79376702,-122.408851
+1955,1940.5.1,"Erckenbrack, Mary E.",Ceramic Mural on Athletics,37.78439299,-122.435069
+1962,1940.3,"Moore, Henry",Standing Figure â€“ Knife Edge,37.79620003,-122.3981699
+1962,1940.7.a,"Olaguibel, Juan",Miguel Hidalgo Y Costilla,37.75972006,-122.4282399
+1966,1942.14.a-b,"Perry, Charles O.",Bronze Icosaspirale,37.79620003,-122.3981699
+1967,1942.14.b,"Martinez, Julian",Juan Bautista de Anza,37.72959005,-122.4935599
+1967,1942.14.a,"Ng, Win",Unknown,37.78233599,-122.436058
+1968,1940.8,"Stellon, Anthony",The Brotherhood of Man,37.76449899,-122.4084956
+1968,1940.5.2,Vaea,Untitled,37.73233601,-122.406393
+1969,1954.17,"Bufano, Beniamino",St. Francis of the Guns,37.72382699,-122.449584
+1969,1955.21,"Gordin, Sidney",Untitled,37.77761798,-122.420614
+1969,1952.21,"Wareham, William",Wyoming Coup,37.72382699,-122.449584
+1971,1960.23,"Vaillancourt, Armand",The Embarcadero Fountain,37.79450006,-122.3947899
+1972,1966.21,"Sells, Raymond",Untitled (Planter),37.77532201,-122.403864
+1972,1966.25,"VandenBerge, Peter",Jungle Scenes,37.72382699,-122.449584
+1973,1967.86.a-h,"Demetrios, Aristides",Sentinels,37.72382699,-122.449584
+1973,1966.23,"Mullican, Lee",The Great Transparents,37.62043,-122.399165
+1974,1968.45,"Asawa, Ruth",Hagiwara Family Plaque,37.77052645,-122.4687267
+1974,1969.1,"Fuller (McChesney), Mary",Dos Liones,37.75632799,-122.405817
+1974,1967.83,"Loarca, Carlos",Connecting Mural Bands,37.75632799,-122.405817
+1974,1968.44,"Puccinelli, Raymond (Raimondo)",American Bison--Buffalo,37.75632799,-122.405817
+1974,1967.79,"Richardson, Harry",The Great Blue Heron,37.75632799,-122.405817
+1974,1969.25,"Rios, Michael",Untitled,37.75632799,-122.405817
+1974,1968.68,"Walburg, Gerald",Stiff Loops (Loop IV),37.75694004,-122.4047499
+1976,1971.46,"Brown, Joan",The Journey #2,37.62043,-122.399165
+1976,1984.68.2,"Coullaut-Valera, Federico",Statue of King Carlos III,37.72557102,-122.499527
+1976,1984.68.1,"Overhoff, Jacques",Untitled,37.77086699,-122.420811
+1976,1973.23,"Torlakson, James",Behind Ted McCann's Garage,37.62043,-122.399165
+1977,1977.58,"Concha, Jerry (Gerald)",Roof Mural,37.75632799,-122.405817
+1977,1974.24.a-f,"Dill, Laddie John",Untitled,37.62043,-122.399165
+1977,1978.52,"Newman, Ruby",Children's Mural,37.75632799,-122.405817
+1977,1973.22,"Overhoff, Jacques",Bicentennial Wings and Sculpture Deck,37.72382699,-122.449584
+1977,1984.46,"Overhoff, Jacques",Bicentennial Wings,37.72382699,-122.449584
+1977,1974.2,"Overhoff, Jacques",Sculpture Deck,37.72382699,-122.449584
+1977,1984.4,"Tchakalian, Sam",Hitwood,37.62043,-122.399165
+1977,1975.3,"Villamor, Manuel",Untitled,37.75632799,-122.405817
+1977,1979.11,"Wiley, William",Void,37.62043,-122.399165
+1978,1976.96,"De Forest, Roy",Homage to Zane Grey,37.62043,-122.399165
+1978,1979.31,"Rivera, Gustavo","Azul, Azul Y Hacer",37.62043,-122.399165
+1979,1976.91,"Bechtle, Robert",San Francisco Nova,37.62043,-122.399165
+1980,1977.41,"Francis, Sam",Untitled,37.62043,-122.399165
+1981,1977.66.a,"Adams, Mark",Pond in Golden Gate Park (The Garden Tapestries),37.62043,-122.399165
+1981,1979.4,"Beasley, Bruce",The Hesperides,37.62043,-122.399165
+1981,1977.66.a-b,"Hudson, Robert",A Horse of Another Color,37.62043,-122.399165
+1981,1979.33,"Villegas, Victor Hugo Barranechea",Simon Bolivar,37.78012602,-122.417734
+1982,1977.66.b,"Adams, Mark",Garden Outside the Gate (The Garden Tapestries),37.62043,-122.399165
+1982,1977.57,"Downie, Romana Anzi",Bust of George Moscone,37.77917798,-122.415746
+1982,1977.67,"Eversley, Frederick",Untitled,37.62043,-122.399165
+1982,1977.42,"O'Banion, Nance",Billboard Series: Exploded Transverse with no Nuggies,37.62043,-122.399165
+1982,1977.59,"Quagliata, Narcissus",Untitled,37.80638866,-122.408132
+1982,1979.36,"Segal, George",The Holocaust,37.781705,-122.496671
+1983,1979.39,"Katano, Marc",Greeting a Totem,37.62043,-122.399165
+1983,1980.3.1-3,"Kozloff, Joyce","Bay Area Victorian, Bay Area Deco, Bay Area Funk",37.62043,-122.399165
+1983,1982.1,"Kunishima, Seiji",Stacking Stones,37.62043,-122.399165
+1983,1979.32,"Pomodoro, Arnaldo",Cilindro Costruito,37.62043,-122.399165
+1983,1985.5.1,"Snyder, Dan","Welcome North, Welcome South, Welcome East, Welcome West",37.62043,-122.399165
+1983,1979.59,"Tamayo, Rufino","Conquest of Space, 1983 DUP",37.62043,-122.399165
+1984,1985.5.3,"Asawa, Ruth","Redding School, Self-Portrait",37.78373099,-122.412261
+1984,1984.7,"Fuller (McChesney), Mary",Dragon,37.79445006,-122.40478
+1984,1985.8.1-7,"Fuller (McChesney), Mary",Rabbit,37.79445006,-122.40478
+1984,1982.5,"Fuller (McChesney), Mary",Ram,37.79445006,-122.40478
+1984,1984.55.1-4,"Fuller (McChesney), Mary",Serpent,37.79445006,-122.40478
+1984,1985.47,"Fuller (McChesney), Mary","Tiger, Ram, Serpent, Monkey, Rabbit, Dragon",37.79445006,-122.40478
+1985,1984.8,"Barr, Roger",Skygate,37.80803597,-122.4086511
+1985,1984.7,"Boyce, Roger",Players,37.758149,-122.412586
+1985,1984.74.a-c,"Brown, Joan",The Dancing Musicians,37.77817999,-122.422523
+1985,1986.1,"Dvortcsak, Michael",Sublimens,37.61242626,-122.3937406
+1985,1985.1,"Hasson, Bruce",Ark (or Ark San Francisco),37.78373099,-122.412261
+1985,1984.1,"Polk, James",Untitled,37.764411,-122.420661
+1986,1985.14.5,"Demetrios, Aristides",Red Gothic,37.77904006,-122.4652199
+1986,1985.14.6,"Fernandez, Rudy",Mission Triptych #3,37.758149,-122.412586
+1986,1985.14.2,"Fernandez, Rudy",Mission Triptych #2,37.758149,-122.412586
+1986,1985.48.a-i,"Fuller (McChesney), Mary","Earth, Air, Sea",37.72524523,-122.5031158
+1986,1986.8,"Hiramoto, Judy",Animal Hopscotch,37.758149,-122.412586
+1986,1985.1,"Katano, Marc",Torso,37.62043,-122.399165
+1986,1985.14.3,M.E.T.A.L. (Mural Environmentalists Together in Art Labor),International Longshoremen's & Warehousemen's Union Memorial (ILWU),37.79325002,-122.3931899
+1986,1985.32.a-c,"Richards, George and Gonzalez, Peter",Marina Breakwater; Wave Organ,37.80711244,-122.4379374
+1986,1984.9.a-w,"Smith, Anthony",Untitled,37.78373099,-122.412261
+1986,1985.14.1-6,"Students, Woodrow Wilson High School",Celebrating the 50th Anniversary of Golden Gate Bridge,37.70953199,-122.447003
+1987,1985.24.4,"Kirkland, Larry",Flight Patterns,37.62043,-122.399165
+1987,1985.24.3,"Kogure, Kimiko",Stern Grove Trocadero Clubhouse [first floor window],37.74024622,-122.4677361
+1987,1985.24.1-5,"Kogure, Kimiko",Stern Grove Trocadero Clubhouse [second floor window],37.74024622,-122.4677361
+1987,1985.24.1,"Kogure, Kimiko",Stern Grove Trocadero Clubhouse [double door window],37.74024622,-122.4677361
+1987,1986.23,"Kogure, Kimiko",Miraloma Fieldhouse Bathrooms,37.73924006,-122.4487099
+1987,1985.25,"Kogure, Kimiko",Stern Grove Trocadero Clubhouse [first floor door],37.74024622,-122.4677361
+1987,1985.24.2,"Kogure, Kimiko",Stern Grove Trocadero Clubhouse,37.74024622,-122.4677361
+1988,1986.25,"Almeida, Peter",Colloidal Pool,37.74409004,-122.4194699
+1988,1986.62,"Anderson, Lois",Outdoor Wall Mosaic,37.74783004,-122.4381399
+1988,1986.11,"Champagne, Lee Roy",The Grail,37.79969499,-122.435151
+1988,1987.42,"Chomenko, Mary",Ocean Beach Fossil,37.74911004,-122.5079599
+1988,1986.63,"Graham, Gary W.",Police Shields,37.78035199,-122.432282
+1988,1985.24.5,"Paunov, Zlatko",Mohandas K. Gandhi,37.79315824,-122.3915536
+1988,1986.9,"Washington, Horace",Untitled,37.78035199,-122.432282
+1989,1987.16,"Deutsch, Richard",Propeller,37.74541006,-122.5074699
+1989,1111.2,"Heavenston, Martha",A World View [figure with fruit],37.778779,-122.406191
+1989,1987.31,"Heavenston, Martha",A World View [tiger],37.778779,-122.406191
+1989,1986.1,"Heavenston, Martha",A World View,37.778779,-122.406191
+1989,1987.44.b,"Heavenston, Martha",A World View [alligator],37.778779,-122.406191
+1989,1987.44.s,"Heavenston, Martha",A World View [cactus],37.778779,-122.406191
+1989,1987.44.i,"Heavenston, Martha",A World View [entryway mural],37.778779,-122.406191
+1989,1987.44.c,"Heavenston, Martha",A World View [mountain],37.778779,-122.406191
+1989,1987.44.n,"Heavenston, Martha",A World View [fish],37.778779,-122.406191
+1989,1987.44.o,"Ludwig, Helen",One Step at a Time,37.77812199,-122.418711
+1989,1988.1,"Martin, Fran",Ndebele,37.724928,-122.381611
+1990,1987.44.t,"Gillman, Steve",Bay Bench,37.78707005,-122.38771
+1990,1987.44.f,"Marsh, Thomas",Goddess of Democracy,37.79445006,-122.40478
+1991,1987.44.j,"Bongers, Jaap (Jacob)",Untitled #2,37.78003101,-122.464404
+1991,1987.44.g,"Bongers, Jaap (Jacob)",Untitled #1,37.78003101,-122.464404
+1991,1987.44.h,"Jurs, Shelley",Good Luck Piece,37.78003101,-122.464404
+1992,1987.43,"Lobdell, Frank",Yale Portfolio,37.62043,-122.399165
+1993,1987.44.k,"Collins, Tim and Goto, Reiko",Aqua Pura,37.60492458,-122.4263833
+1993,1987.44.v,"Hasson, Bruce",Trolleys,37.78861902,-122.420007
+1993,1987.44.e,"Riley, Cheryl",On Target Podium,37.729803,-122.39788
+1993,1987.44.w,"Sproat, Christopher Townsend",Spine,37.786041,-122.407099
+1994,1987.44.u,"Donahue, Marcia",Moon Face,37.79605004,-122.4099799
+1994,1987.44.a,"Donahue, Marcia",Five Carved Stones,37.79605004,-122.4099799
+1994,1987.44.d,"Donahue, Marcia",Peach,37.79605004,-122.4099799
+1994,1987.44.r,"Donahue, Marcia",Persimmon,37.79605004,-122.4099799
+1994,1987.44.a-w,Joesam.,Hope Flight,37.76292899,-122.421984
+1994,1987.44.p,"Richards, Peter","Companion Place, a Complement to the Comfort Garden",37.75632799,-122.405817
+1994,1987.44.m,"Riley, Cheryl","Ndebele Wall Panels I,II,III,IV",37.729803,-122.39788
+1995,1989.21,"Acconci, Saitowitz and Soloman",Promenade Ribbon,37.80663005,-122.4059699
+1995,1987.44.q,"di Suvero, Mark",Sea Change,37.77996005,-122.3896999
+1995,1988.5.a-b,"Heavenston, Martha",Dancing in the Sea of Milk,37.78467198,-122.415597
+1995,1989.25.g,"Heavenston, Martha",African King with Animal Power,37.78467198,-122.415597
+1995,1989.29,"Heavenston, Martha",Dancing in the Sea of Milk; African King with Animal Power,37.78467198,-122.415597
+1995,1989.25.d,"Hollis, Douglas",Untitled,37.77494701,-122.405221
+1995,1987.44.l,Joesam.,Folks in the 'Hood [running boy],37.78467198,-122.415597
+1995,1988.4,Joesam.,Folks in the 'Hood,37.78467198,-122.415597
+1995,1988.43,Joesam.,Folks in the 'Hood [figure in wheelchair],37.78467198,-122.415597
+1995,1988.3,Joesam.,Folks in the 'Hood [woman with ball],37.78467198,-122.415597
+1995,1989.25.b,Joesam.,Folks in the 'Hood [figures with hoop],37.78467198,-122.415597
+1995,1989.25.a,Joesam.,Folks in the 'Hood [seated child],37.78467198,-122.415597
+1995,1989.25.i,Joesam.,Folks in the 'Hood [running woman],37.78467198,-122.415597
+1995,1989.24,"Manwaring, Michael",Historic and Interpretative Signage Project,37.78028003,-122.3892599
+1995,1989.22,"Poethig, Johanna",Gameboard,37.78467198,-122.415597
+1995,1988.2,"Poethig, Johanna",Prediction,37.78467198,-122.415597
+1995,1989.25.a-i,"Poethig, Johanna",Epic; Prediction; Gameboard; and H20,37.78467198,-122.415597
+1995,1989.25.h,"Poethig, Johanna",H20,37.78467198,-122.415597
+1995,1989.25.f,"Poethig, Johanna",Epic,37.78467198,-122.415597
+1995,1988.44,"Scuri, Vicki",Sheriff Star Plaza,37.77494701,-122.405221
+1995,1989.25.e,"Shum, Hilda",Games of the World,37.75632799,-122.405817
+1995,1989.25.c,"Shum, Hilda",Fish Tale,37.75632799,-122.405817
+1996,1993.7,"Aycock, Alice",Cyclone Fragment,37.77917798,-122.415746
+1996,1999.20.d,"Aycock, Alice",Functional and Fantasy Stair,37.77917798,-122.415746
+1996,1991.4,"Beldner, Ray",Playland Revisited,37.77326002,-122.51005
+1996,1991.2.1,"Beldner, Ray",Playland Revisited [Streetcar],37.77326002,-122.51005
+1996,1994.15.1-2,"Beldner, Ray",Playland Revisited [Laughing Sal],37.77326002,-122.51005
+1996,1999.20.c,"Beldner, Ray",Playland Revisited [Clown],37.77326002,-122.51005
+1996,1999.20.e,"Beldner, Ray",Playland Revisited [Horse],37.77326002,-122.51005
+1996,1995.7.b,"Beldner, Ray",Playland Revisited [Rooster],37.77326002,-122.51005
+1996,1998.6,"Blake, Nayland W.",Constellation,37.77917798,-122.415746
+1996,1997.3.1.a-d,"Donahue, Scott","Kate, Allan, Javier, Ting, Sloanie",37.743724,-122.481369
+1996,1991.2.2,"Evans, Mark and Brown, Charlie",Into the Light,37.77917798,-122.415746
+1996,1999.20.b,"Gonzalez, Arthur",Peaceable Kingdom,37.743724,-122.481369
+1996,1990.7.1-2,"Hamilton, Ann and Chamberlain, Ann",Untitled,37.77917798,-122.415746
+1996,1990.7.1,"Yung, Rene",Take Root,37.795231,-122.410195
+1996,1990.7.2,"Yung, Rene",copper panel,37.795231,-122.410195
+1996,1990.9,"Yung, Rene",lamp (Green),37.795231,-122.410195
+1996,T2018.77.a-e,"Yung, Rene",lamp (Leaf),37.795231,-122.410195
+1996,1993.6.a-lll,"Yung, Rene",lamp (Points of Arrival),37.795231,-122.410195
+1996,1993.2.1-2,"Yung, Rene",lamp (Chinese characters),37.795231,-122.410195
+1996,1999.20.a,"Yung, Rene",lamp (Take Root),37.795231,-122.410195
+1996,1999.20.a-e,"Yung, Rene",lamp (Points of Departure),37.795231,-122.410195
+1996,1994.17,"Yung, Rene",lamp (New Soil),37.795231,-122.410195
+1997,1995.8.1,"Chamberlain, Ann",Untitled Photographic Images,37.75632799,-122.405817
+1997,1995.16,"deSoto, Lewis",Jury Assembly Room,37.78041301,-122.418795
+1997,1995.7.a-f,"McDonnell, Mark",Glass Rondella,37.74009899,-122.458756
+1997,1995.7.f,"Montoya, Emmanuel Catarino",Quetzalcoatl: Pre-Colombian Deity of Knowledge and Culture,37.75199702,-122.419704
+1997,1995.13,"Paniagua, Emanuel",Perhaps Better Voices,37.77917798,-122.415746
+1998,1995.7.e,"Carland, Tammy Rae",On Becoming: Billy + Katie 1964 #1-8,37.62043,-122.399165
+1998,1995.17,"Chagoya, Enrique",Authors of Latin American Roots,37.77917798,-122.415746
+1998,1995.9.3,"Kilgallen, Margaret",Untitled,37.62043,-122.399165
+1998,1995.9.1-4,"Paley, Albert",Courthouse Entry Doors,37.78041301,-122.418795
+1998,1995.9.1,"Preston, Ann",Panel,37.78041301,-122.418795
+1998,1995.7.a,"Preston, Ann",Floor,37.78041301,-122.418795
+1998,1995.14,"Preston, Ann",Bench,37.78041301,-122.418795
+1998,1995.1,"Preston, Ann",Family Court Waiting Area,37.78041301,-122.418795
+1998,1995.7.d,"Riley, Cheryl",Indian Spoon Sconces,37.729803,-122.39788
+1999,1996.1.1,"Asawa, Ruth",Origami Fountain,37.78574202,-122.430103
+1999,1998.4.4,"Asawa, Ruth",Origami Fountain,37.78610801,-122.430152
+1999,1997.11,"Asawa, Ruth",Origami Fountains,37.78558004,-122.42976
+1999,1996.7.c,"Carnwath, Squeak","Fly, Flight, Fugit",37.62043,-122.399165
+1999,1995.7.c,"Chagoya, Enrique",Love Letters,37.62043,-122.399165
+1999,1996.11,"Frey, Viola",World Civilization,37.62043,-122.399165
+1999,1995.18,"Fuller (McChesney), Mary",Bench support (Rat),37.79445006,-122.40478
+1999,1996.7.a-i,"Fuller (McChesney), Mary",Bench support (Hare),37.79445006,-122.40478
+1999,1996.7.h,"Fuller (McChesney), Mary",Bench support (Dog),37.79445006,-122.40478
+1999,1996.7.f,"Fuller (McChesney), Mary",Bench support (Serpent),37.79445006,-122.40478
+1999,1996.6,"Fuller (McChesney), Mary",Bench support (Dragon),37.79445006,-122.40478
+1999,1996.12,"Fuller (McChesney), Mary",Bench support (Ram),37.79445006,-122.40478
+1999,1996.7.i,"Fuller (McChesney), Mary",Untitled,37.79445006,-122.40478
+1999,1996.7.a,"Fuller (McChesney), Mary",Bench support (Monkey),37.79445006,-122.40478
+1999,1996.2,"Fuller (McChesney), Mary",Lion,37.79445006,-122.40478
+1999,1996.3,"Fuller (McChesney), Mary",Bench support (Ox),37.79445006,-122.40478
+1999,1996.7.b,"Fuller (McChesney), Mary",Bench support (Tiger),37.79445006,-122.40478
+1999,1996.7.g,"Fuller (McChesney), Mary",Bench support (Pig),37.79445006,-122.40478
+1999,1996.1.2,"Fuller (McChesney), Mary",Serpent Wall,37.79445006,-122.40478
+1999,1999.8.2,"Fuller (McChesney), Mary",Bench support (Rooster),37.79445006,-122.40478
+1999,1998.4.3,"Fuller (McChesney), Mary",Bench support (Horse),37.79445006,-122.40478
+1999,1995.9.4,"Garcia, Rupert",Bird Technology,37.62043,-122.399165
+1999,1997.1,"Garza, Carmen Lomas",Baile!,37.62043,-122.399165
+1999,1996.5,"Goggin, Brian",Substrada [Switch],37.741266,-122.423002
+1999,1996.1.1-5,"Goggin, Brian",Substrada [Bed],37.74379298,-122.421374
+1999,1996.1.5,"Goggin, Brian",Substrada [Grow],37.74578301,-122.419436
+1999,1996.7.e,"Goggin, Brian",Substrada [Feed and Eat],37.74527498,-122.420435
+1999,1996.7.d,"Goggin, Brian",Substrada [Others],37.74239006,-122.4219599
+1999,1996.1.4,"Goggin, Brian",Substrada [Hunt],37.74246399,-122.421598
+1999,1997.12,"Goggin, Brian",Substrada [Job],37.74711599,-122.419618
+1999,1998.4.1-5,"Goggin, Brian",Substrada [Ballast],37.74676005,-122.4191199
+1999,1998.4.1,"Goggin, Brian",Substrada,37.74676005,-122.4191199
+1999,1998.4.2,"Goggin, Brian",Substrada [Road],37.74421899,-122.42053
+1999,1995.19,"Gouveia (Rigo 99), Ricardo",Thinking of Balmy Alley,37.62043,-122.399165
+1999,1995.8.1-2,"Leong, Lampo",Tectonic Melange,37.79605004,-122.4099799
+1999,1996.4,"Mandel, Mike and Sultan, Larry",Waiting,37.62043,-122.399165
+1999,1995.8.2,"Montoya, Emmanuel Catarino",Wen Ch'ang: Chinese Deity of Literature,37.75199702,-122.419704
+1999,1996.1.3,"Montoya, Emmanuel Catarino",Egypt's Contribution to European Civilization,37.75199702,-122.419704
+1999,1995.9.2,"Riley, Cheryl",Angels of Mercy,37.78110402,-122.426087
+1999,1998.4.5,"Sonnier, Keith",Ceiling Flood,37.62043,-122.399165
+2000,1998.11.a,"Alavi, Sayed",Speaking Stones [boulder poem],37.78319903,-122.4775033
+2000,1998.3.a-l,"Alavi, Sayed",Speaking Stones [sidwalk poem],37.78328499,-122.477112
+2000,1998.11.e,"Alavi, Sayed",Speaking Stones [lobby floor],37.78318718,-122.4775025
+2000,1999.21,"Alavi, Sayed",Speaking Stones [seat wall],37.78319479,-122.4773881
+2000,1999.19.3,"Alavi, Sayed",Speaking Stones [boulder poem],37.78321299,-122.477965
+2000,2000.16,"Alavi, Sayed",Speaking Stones,37.78321299,-122.477965
+2000,1999.19.7,"Alavi, Sayed",Speaking Stones [sidwalk poem],37.78321999,-122.477246
+2000,1999.8.3,"Alicia, Juana and Montoya, Emmanuel",Sanctuary/Sanctuario,37.62043,-122.399165
+2000,1998.7.a-d,"Barth, Anders",First Person Plural,37.78378899,-122.412946
+2000,1998.11.b,"Crutcher, Colette and Roller, Mark",Art Panels,37.71413198,-122.465964
+2000,1999.18,"Crutcher, Colette and Roller, Mark",Art Panel,37.71413198,-122.465964
+2000,1999.7.a-i,"deSoto, Lewis",On The Air,37.62043,-122.399165
+2000,1998.11.d,"Howard, Mildred",Salty Peanuts,37.62043,-122.399165
+2000,T2018.53,"Hung, Su-Chen",Welcome,37.62043,-122.399165
+2000,1999.15,"Kang, Ik-Joong",Gateway,37.62043,-122.399165
+2000,1998.8,"Kricken, John and Rolph",Amundsen Historical Plaque,37.76981502,-122.510542
+2000,1998.11.f,"Misrach, Richard","Golden Gate Bridge, 4.17.00, 4:01 pm",37.61242626,-122.3937406
+2000,T2018.51-61,"Misrach, Richard","Golden Gate Bridge, 3.4.01, 7:30pm",37.61242626,-122.3937406
+2000,1998.11.a-f,"Misrach, Richard","Golden Gate Bridge, 2.27.00, 4:55 pm",37.61242626,-122.3937406
+2000,1998.11.c,"Pineda, Eduardo and Patlan, Ray",Raizes/Roots,37.75710101,-122.414812
+2000,1999.19.6,"Preston, Ann",You Were in Heaven,37.62043,-122.399165
+2001,1999.17.6,"Carpenter, James Fraser",Sculptural Light Reflectors,37.62043,-122.399165
+2001,1999.19.8,Joesam.,Wade in Water,37.72549801,-122.393582
+2002,1999.17.1,"Acconci, Vito",Light Beams for the Sky of Transfer Cooridor,37.62043,-122.399165
+2002,1999.12,"Beery, Jonathan",Leatherback Sea Turtle,37.80328006,-122.4316799
+2002,1999.19.10,"Beery, Jonathan",The Pink Short-spined Starfish,37.80328006,-122.4316799
+2002,1999.19.11,"Fine, Jud and McCarren, Barbara",Split Mound,37.73541003,-122.5068199
+2002,1999.17.5,Jon Rubin and Harrell Fletcher,Photos of People from the Neighborhood Enlarged and Attached to the Building,37.79837602,-122.409541
+2002,1999.17.9,Jon Rubin and Harrell Fletcher,Stenciled Fortunes,37.79837602,-122.409541
+2002,1999.13,"Kahn, Ned",Wind Portal,37.62043,-122.399165
+2002,1999.19.13,"Mangrum, Joe",Layla,37.75545003,-122.4187399
+2002,1999.19.1-15,"Mangrum, Joe",Swing Daddy,37.75545003,-122.4187399
+2002,1999.17.3,"Murrill, Gwynn",Tiger II,37.73541003,-122.5068199
+2003,1999.19.5,"Gordon, David, Shu, Wang Po, and Shum, Hilda",Tree,37.78327003,-122.4026999
+2003,1999.19.1,"Poethig, Johanna",Play Ball (Basketball),37.78491013,-122.4850171
+2003,1999.19.4,"Poethig, Johanna",Play Ball (Tennis),37.78491013,-122.4850171
+2003,1999.22.2,"Poethig, Johanna",Play Ball,37.78491013,-122.4850171
+2004,1999.16,"Barr, Aileen",Secret Garden,37.74227726,-122.4651058
+2004,1999.19.14,"Ozan, Pepe",Invocation,37.74944004,-122.4028299
+2005,1999.17.7,"Blackstone, Amy",Untitled,37.76406398,-122.420223
+2005,1999.19.15,"Blackstone, Amy","Earth, Fire, and Water",37.79622002,-122.4201299
+2005,2000.5.1-2,"Hsu, Joyce",Odonatoa - Kinetic Dragonfly,37.73726004,-122.4210899
+2005,1999.17.8,"O'Dell, Shaun",Beyond When the Golden Portal Can Come,37.62043,-122.399165
+2005,2000.4.a-d,"O'Dell, Shaun",The Ghost Extraction Dialogue for the Followers of Blood,37.62043,-122.399165
+2005,1999.8.1,"Saulls, Vicki",From the Heart Outwards,37.76048001,-122.436243
+2005,1999.17.2,"Saulls, Vicki",Welcome Hands,37.76048001,-122.436243
+2005,1999.22.1-2,"Saulls, Vicki",Nuotatori,37.802796,-122.412319
+2005,1999.19.9,"Saulls, Vicki",Locus,37.802796,-122.412319
+2005,1999.17.4,Wang Po Shu,Ghinlon/Transcope,37.77621003,-122.4245699
+2005,1999.14,Wang Po Shu,Ghinlon/Transcope,37.77480003,-122.4242999
+2005,2000.1,Wang Po Shu,Ghinlon/Transcope,37.77178003,-122.4235899
+2005,1999.22.1,Wang Po Shu,Ghinlon/Transcope,37.77572003,-122.4244799
+2005,1999.19.12,Wang Po Shu,Ghinlon/Transcope,37.77201003,-122.4237299
+2005,1999.17.1-9,Wang Po Shu,Ghinlon/Transcope,37.77388003,-122.4241099
+2005,1999.19.2,Wang Po Shu,Ghinlon/Transcope,37.77296003,-122.4239299
+2006,2000.2,"Buchen, Bill and Mary",Untitled (Canopy panels),37.76046006,-122.3886699
+2006,2001.6.c,"Buchen, Bill and Mary",Untitled (Pole-mounted sculpture),37.76046006,-122.3886699
+2006,2000.6,"Buchen, Bill and Mary",Untitled (Third Street Light Rail Project),37.76046006,-122.3886699
+2006,2000.12,"Buchen, Bill and Mary",Untitled (Paving inserts),37.76432005,-122.3889599
+2006,2001.4,"Buchen, Bill and Mary",Untitled (Paving inserts),37.76880005,-122.3892099
+2006,2002.2.1.d,"Buchen, Bill and Mary",Untitled (Paving inserts),37.76046006,-122.3886699
+2006,2001.17,"Buchen, Bill and Mary",Untitled (Pole-mounted scupture),37.76046006,-122.3886699
+2006,2002.2.1.i,"Buchen, Bill and Mary",Untitled (Canopy panels),37.76880005,-122.3892099
+2006,2002.2.1.g,"Buchen, Bill and Mary",Untitled (Pole-mounted sculpture),37.76880005,-122.3892099
+2006,2002.2.1.f,"Buchen, Bill and Mary",Untitled (Paving insert),37.77643006,-122.3941499
+2006,2002.2.1.b,"Buchen, Bill and Mary",Untitled (Third Street Light Rail Project),37.77643006,-122.3941499
+2006,2002.2.1.h,"Buchen, Bill and Mary",Untitled (Pole-mounted sculpture),37.77643006,-122.3941499
+2006,2002.7,"Buchen, Bill and Mary",Untitled (Paving inserts),37.77292005,-122.3897999
+2006,2004.13.2,"Buchen, Bill and Mary",Untitled (Canopy panels),37.77643006,-122.3941499
+2006,2002.2.1.c,"deSoto, Lewis","Shining Paths,San Francisco Sister Cities",37.62043,-122.399165
+2006,2000.13,"Hayes, Frederick, JoeSam and Washington, Horace",Untitled (Pole-mounted sculpture),37.73483004,-122.3907699
+2006,2000.17,"Hayes, Frederick, JoeSam and Washington, Horace",Untitled (Canopy panels),37.73244003,-122.3916099
+2006,T2018.52,"Hayes, Frederick, JoeSam and Washington, Horace",Untitled (Third Street Rail Project),37.73722006,-122.3899399
+2006,T2018.51,"Hayes, Frederick, JoeSam and Washington, Horace",Untitled (Third Street Rail Project),37.73244003,-122.3916099
+2006,T2018.36,"Hayes, Frederick, JoeSam and Washington, Horace",Untitled (Paving inserts),37.73404005,-122.3910599
+2006,2001.6.b,"Hayes, Frederick, JoeSam and Washington, Horace",Untitled (Canopy panels),37.73722006,-122.3899399
+2006,2000.15,"Hayes, Frederick, JoeSam and Washington, Horace",Utitled (Pole-mounted sculpture),37.73722006,-122.3899399
+2006,2003.3,"Hayes, Frederick, JoeSam and Washington, Horace",Untitled (Third Street Light Rail Project),37.73404005,-122.3910599
+2006,2002.2.1.k,"Hayes, Frederick, JoeSam and Washington, Horace",Untitled (Paving inserts),37.73722006,-122.3899399
+2006,2003.7.b,"Hayes, Frederick, JoeSam and Washington, Horace",Untitled (Pole-mounted sculpture),37.73244003,-122.3916099
+2006,2004.4,"Hayes, Frederick, JoeSam and Washington, Horace",Untitled (Paving inserts),37.73244003,-122.3916099
+2006,2004.13.1,"Hayes, Frederick, JoeSam and Washington, Horace",Untitled (Canopy panels),37.73404005,-122.3910599
+2006,2001.6.d,"Hsu, Joyce",Incomplete Metamorphosis (Dragonfly),37.77918402,-122.477476
+2006,2002.4.a-r,"Hsu, Joyce",Incomplete Metamorphosis,37.77918402,-122.477476
+2006,2003.7.a,"Hsu, Joyce",Incomplete Metamorphosis (Firefly),37.77918402,-122.477476
+2006,2002.6,"Koloski, Vince",A Library Book,37.77538908,-122.3929457
+2006,2001.6.f,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Pole-mounted sculpture),37.74273003,-122.3880099
+2006,2001.5,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Canopy panels),37.70890004,-122.4052299
+2006,2001.6.a,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Third Street Light Rail Project),37.71227003,-122.4026099
+2006,2000.14,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Pole-mounted sculpture),37.72927003,-122.3927299
+2006,2000.5.1,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Pole-mounted sculpture),37.76432005,-122.3889599
+2006,2001.6.e,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Pole-mounted sculpture),37.74901004,-122.3875999
+2006,2001.6.a-f,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Pole-mounted sculpture),37.77292005,-122.3897999
+2006,2002.2.1.j,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Pole-mounted sculpture),37.72237005,-122.3955699
+2006,2002.2.2,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Pole-mounted sculpture),37.72555006,-122.3943299
+2006,2002.8,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Pole-mounted sculpture),37.75539006,-122.3881099
+2006,2002.2.1.a-k,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Third Street Light Rail Project),37.70890004,-122.4052299
+2006,2002.9,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Pole-mounted sculpture),37.71227003,-122.4026099
+2006,2001.18,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Canopy panels),37.71227003,-122.4026099
+2006,2002.1,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Pole-mounted sculpture),37.71887006,-122.3975699
+2006,2003.7.a-b,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Paving inserts),37.71227003,-122.4026099
+2006,2004.12,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Pole-mounted sculpture),37.70890004,-122.4052299
+2006,2004.13.1-3,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Paving inserts),37.70890004,-122.4052299
+2006,2004.13.3,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Pole-mounted sculpture),37.74909209,-122.3862709
+2006,2006.5.g,"Margrill, Anita and Nagasawa, Nobuho",Untitled (Pole-mounted sculpture),37.74038004,-122.3888299
+2006,2002.2.1.a,"Nagasawa, Nobuho, Margrill, Anita and Buchen, Bill and Mary",Untitled (Third Street Light Rail Project),37.76432005,-122.3889599
+2006,2002.2.1.e,"Nagasawa, Nobuho, Margrill, Anita and Buchen, Bill and Mary",Untitled (Third Street Light Rail Project),37.77292005,-122.3897999
+2006,2000.5.2,"Poethig, Johanna and Morales, Julio Cesar",Roots and Veins,37.74588502,-122.452509
+2007,2006.5.r,"Kennedy, Deborah",Solar Sight,37.73307005,-122.4488999
+2007,2007.32.11,"Lieb, Reddy and Raunsford, Linda",Six Degrees,37.73397999,-122.433626
+2007,2005.6.c,"Murrill, Gwynn",Hawk V,37.73541003,-122.5068199
+2007,2006.5.o,"Saulls, Vicki",Untitled [pink crab],37.76742006,-122.4606399
+2007,2005.7.a,"Saulls, Vicki",Untitled [pelican],37.76742006,-122.4606399
+2007,2007.32.8,"Saulls, Vicki",Untitled [tortoise],37.76742006,-122.4606399
+2007,2005.7.a-c,"Saulls, Vicki",Untitled [group of animals],37.76742006,-122.4606399
+2007,2007.32.1-12,"Saulls, Vicki",Untitled [purple crab],37.76742006,-122.4606399
+2007,2006.5.i,"Saulls, Vicki",Untitled [yellow crab],37.76742006,-122.4606399
+2008,2005.6.b,"Corliss, Troy",Noe Valley Natives,37.74257702,-122.428479
+2008,2007.32.10,Daub Firmin Hendrickson,Harvey Milk [relief],37.77939476,-122.4184766
+2008,T2018.67,Daub Firmin Hendrickson,Harvey Milk [bust],37.77939476,-122.4184766
+2008,2006.5.f,"Finneran, Bean",Untitled [south wall],37.72508399,-122.474146
+2008,2006.4.d,"Finneran, Bean",Untitled [north wall],37.72508399,-122.474146
+2008,2007.32.5,"Finneran, Bean",Untitled,37.72508399,-122.474146
+2008,2007.22.2.a-d,"Goggin, Brian and Keehn, Dorka",Language of the Birds,37.79789003,-122.4066399
+2008,2007.32.12,"Goldberg, Jim and Rubin, Jon",Imagine Even More,37.71639602,-122.457862
+2008,2006.5.a-s,"Hsu, Joyce",Namoo House,37.62043,-122.399165
+2008,2007.32.1,"Igarashi, Takenobu",Sky Dancing,37.748793,-122.455811
+2008,2005.3,"Igarashi, Takenobu",Horizontal Feeling,37.748793,-122.455811
+2008,2005.7.b,"Johnson, Amana",Time to Dream (figure),37.734944,-122.389792
+2008,2006.5.q,"Johnson, Amana",Time to Dream (bench),37.734944,-122.389792
+2008,2006.5.l,"Johnson, Amana",Time to Dream,37.734944,-122.389792
+2008,2007.11.2.a-b,"Keefer, Katherine and Gillman, Steve",The Swimmers,37.71347501,-122.415822
+2008,2006.5.h,"Lin, Maya",Where the Land Meets the Sea,37.769883,-122.466863
+2008,2006.5.c,"Rodriguez, Isis",Untitled [Potrero Del Sol Park],37.74881575,-122.406336
+2008,2005.6.a-h,"Rodriguez, Isis",Untitled [Rolph Playground],37.74973005,-122.4068999
+2008,2006.5.n,"Smith, Owen",Building the Iron Horse,37.748793,-122.455811
+2008,2006.5.b,"Smith, Owen",The Four Elements,37.748793,-122.455811
+2008,2005.6.a,"True, Laurel",Sun Spheres,37.72414006,-122.4573599
+2008,2007.32.9,"Wagner, Catherine","Swimmer's Waves [column F, row 8]",37.737793,-122.475662
+2008,2006.4.a,"Wagner, Catherine","Swimmer's Waves [column D, row 3]",37.737793,-122.475662
+2008,2005.2,"Wagner, Catherine","Swimmer's Waves [column F, row 2]",37.737793,-122.475662
+2008,2005.6.f,"Wagner, Catherine","Swimmer's Waves [column A, row 3]",37.737793,-122.475662
+2008,2006.5.d,"Wagner, Catherine","Swimmer's Waves [column A, row 6]",37.737793,-122.475662
+2008,2006.4.a-d,"Wagner, Catherine",Swimmer's Waves,37.737793,-122.475662
+2008,2007.32.7,"Wagner, Catherine","Swimmer's Waves [column C, row 7]",37.737793,-122.475662
+2008,2006.5.a,"Wagner, Catherine","Swimmer's Waves [column E, row 2]",37.737793,-122.475662
+2008,2007.32.2,"Wagner, Catherine","Swimmer's Waves [column D, row 5]",37.737793,-122.475662
+2008,2006.5.j,"Wagner, Catherine","Swimmer's Waves [column A, row 1]",37.737793,-122.475662
+2008,2005.6.d,"Wagner, Catherine","Swimmer's Waves [column A, row 8]",37.737793,-122.475662
+2008,2005.6.g,"Wagner, Catherine","Swimmer's Waves [column C, row 4]",37.737793,-122.475662
+2008,2006.5.k,"Wagner, Catherine","Swimmer's Waves [column E, row 6]",37.737793,-122.475662
+2008,2007.32.6,"Wagner, Catherine","Swimmer's Waves [column D, row 1]",37.737793,-122.475662
+2008,2007.32.4,"Wagner, Catherine","Swimmer's Waves [column G, row 5]",37.737793,-122.475662
+2008,T2018.68,"Wagner, Catherine","Swimmer's Waves [column D, row 8]",37.737793,-122.475662
+2008,2005.6.e,"Wagner, Catherine","Swimmer's Waves [column B, row 1]",37.737793,-122.475662
+2008,2005.5,"Wagner, Catherine","Swimmer's Waves [column B, row 4]",37.737793,-122.475662
+2008,2005.6.h,"Wagner, Catherine","Swimmer's Waves [column B, row 8]",37.737793,-122.475662
+2008,2006.5.p,"Wagner, Catherine","Swimmer's Waves [column G, row 4]",37.737793,-122.475662
+2008,2005.7.c,"Wagner, Catherine","Swimmer's Waves [column E, row 5]",37.737793,-122.475662
+2008,2006.5.e,"Wagner, Catherine","Swimmer's Waves [column D, row 7]",37.737793,-122.475662
+2008,2006.4.b,"Wagner, Catherine","Swimmer's Waves [column B, row 6]",37.737793,-122.475662
+2008,2006.5.m,"Wagner, Catherine","Swimmer's Waves [column F, row 5]",37.737793,-122.475662
+2008,2007.32.3,"Wagner, Catherine","Swimmer's Waves [column G, row 8]",37.737793,-122.475662
+2008,2006.4.c,"Wagner, Catherine","Swimmer's Waves [column F, row 7]",37.737793,-122.475662
+2008,2007.17,"Wagner, Catherine","Swimmer's Waves [column B, row 2]",37.737793,-122.475662
+2008,2007.21.1,"Wagner, Catherine","Swimmer's Waves [column G, row 1]",37.737793,-122.475662
+2008,2006.5.s,"Zed, Dana",California Wildflowers,37.727114,-122.406362
+2009,2007.30.1-3,"Carey, Michael",Woman with Birds,37.75153501,-122.465231
+2009,2007.21.3.a-kk,"Carey, Michael",Woman with Birds [obelisk],37.75153501,-122.465231
+2009,2007.23,"Carey, Michael",Woman with Birds [figure],37.75153501,-122.465231
+2009,2007.5.1,"Davis, Michael and Schwartzenberg, Susan",Homage to the Amateur; The American Dream: A Tribute to Harvey Milk; Bio/Obscura,37.76911006,-122.4349099
+2009,2007.20.1,"Powell, Eric",Ocean Current,37.72413599,-122.456251
+2009,2007.9.1,"Telcocci, Gina",here and past here,37.76013602,-122.397664
+2009,2007.20.2.a-d,"Washington, Horace",Untitled,37.78439299,-122.435069
+2009,2007.20.1-3,Wowhaus,Sunnyside Menagerie [cakesydillo],37.73190099,-122.440806
+2009,2007.31.2.a-d,Wowhaus,Sunnyside Menagerie [glyphies],37.73190099,-122.440806
+2009,2007.22.1-3,Wowhaus,Sunnyside Menagerie,37.73190099,-122.440806
+2009,2007.12.1,Wowhaus,Sunnyside Menagerie [gumpus bumpus],37.73190099,-122.440806
+2009,2006.8,Wowhaus,Sunnyside Menagerie [trilogator],37.73190099,-122.440806
+2009,2007.16,Wowhaus,Sunnyside Menagerie [possumbat],37.73190099,-122.440806
+2010,2007.12.1-3,"Donahue, Scott",Touching Earth,37.78186099,-122.468039
+2010,2007.8.1-3,"Pumpelly Bates, Diana",Reflection,37.748793,-122.455811
+2010,2007.2.b,"Roberts, Kent",Passage,37.80328006,-122.4316799
+2010,2007.10.2.a-j,"Zoell, Bob",BFILRYD,37.62043,-122.399165
+2011,2007.7.3.a-j,"Buster, Kendall",Topograph I and II,37.62043,-122.399165
+2011,2007.11.1,"Echelman, Janet",Every Beating Second,37.62043,-122.399165
+2011,2007.2.a-b,"Grieve, Mark and Spector, Ilana",Full Circles,37.71136801,-122.404743
+2011,2007.28,"Kitundu, Walter",San Francisco Bay Area Bird Encounters,37.62043,-122.399165
+2011,2007.12.3.a-l,"Sato, Norie",Air Over Under,37.62043,-122.399165
+2011,2007.8.2.a-d,"Sowers, Charles",Butterfly Wall,37.77712,-122.41964
+2011,2007.26,"Sowers, Charles",Windswept,37.76442298,-122.438148
+2011,2007.8.1,"True, Laurel",Lily Pod,37.77625006,-122.4278999
+2011,2007.6.1,Wowhaus,Abundance,37.75117002,-122.498099
+2012,2007.9.2.a-j,"Bartalos, Michael",Mission Parade,37.75938005,-122.4213399
+2012,2007.14,"Crutcher, Colette",Plaything of the Wind [kites and clouds],37.79434399,-122.411507
+2012,2007.25,"Crutcher, Colette",Plaything of the Wind,37.79434399,-122.411507
+2012,2007.5.1-2,"Crutcher, Colette",Plaything of the Wind [dragon kite],37.79434399,-122.411507
+2012,2007.27,"Crutcher, Colette",Plaything of the Wind [child],37.79434399,-122.411507
+2012,2007.10.1-2,"Kahn, Ned",Firefly,37.78111102,-122.418926
+2012,2007.31.1-3,Nagasawa Nobuho,Ship Shape Shifting Time,37.75007006,-122.3904499
+2012,2007.4.3,"Ohtake, Moto",Aero #8,37.773523,-122.486895
+2012,2006.7,"Richards, Peter and Schwartzenberg, Susan",Philosopher's Way,37.71873004,-122.4185399
+2012,2007.12.2.a-b,"Sheng, Shan Shan",Active Memory,37.79434399,-122.411507
+2012,2007.24,"SuÃ¡rez-Wolfe, Primitivo",Domestic Seating (Leather Chair),37.76946004,-122.4291199
+2012,2007.9.1-2,"SuÃ¡rez-Wolfe, Primitivo",Domestic Seating (Wooden Chair),37.76946004,-122.4291199
+2012,2007.7.2.a-d,"SuÃ¡rez-Wolfe, Primitivo",Domestic Seating (Rocking Chair),37.76946004,-122.4291199
+2012,2007.4.1-3,"SuÃ¡rez-Wolfe, Primitivo",Domestic Seating  (Wooden Chair),37.76946004,-122.4291199
+2012,2007.30.1,"SuÃ¡rez-Wolfe, Primitivo",Domestic Seating,37.76946004,-122.4291199
+2012,2006.6,"Tedrick, Bryan",Pacific Breath,37.75721702,-122.48667
+2013,2007.4.1,"Crutcher, Colette",Dahlias,37.77283722,-122.4982313
+2013,2007.31.1,"Hendrickson, Jonah",Adolph Sutro,37.77939476,-122.4184766
+2013,2007.4.2.a-h,"Kusama, Yayoi",High Heels for Going to Heaven,37.62043,-122.399165
+2013,2007.21.1-3,"Mazinani, Sanaz",Forever in the Sky: Mission,37.62043,-122.399165
+2013,2007.7.1,"Mazinani, Sanaz",Forever in the Sky: Sutro Tower,37.62043,-122.399165
+2013,2007.22.1,"Mazinani, Sanaz",Forever in the Sky: City Hall,37.62043,-122.399165
+2013,2007.2.a,"Mazinani, Sanaz",Forever in the Sky: Bayview,37.62043,-122.399165
+2013,2007.31.3.a-bb,"Mazinani, Sanaz",Forever in the Sky: Richmond,37.62043,-122.399165
+2013,2007.15,"Mazinani, Sanaz",Forever in the Sky: Golden Gate,37.62043,-122.399165
+2013,2007.22.3.a-t,"Ording, Kelly",Windmills,37.72908199,-122.409818
+2013,2007.11.1-3,"Poethig, Johanna",Celebrate Ability,37.78439299,-122.435069
+2013,2007.13,"Powell, Eric",Cayuga Portal,37.714271,-122.449716
+2013,2007.6.2.a-j,"Rydingsvard, Ursula von",Ocean Voices II,37.62043,-122.399165
+2013,2007.30.2.a-d,"Saunders, Ron Moultrie",Symbiotic Relationships (panel 1 of 5),37.73248202,-122.391314
+2013,2007.7.1-3,"Saunders, Ron Moultrie",Symbiotic Relationships (panel 5 of 5),37.73248202,-122.391314
+2013,2007.29,"Saunders, Ron Moultrie",Spirit and Nature Dancing Together,37.73248202,-122.391314
+2013,2007.20.3.a-m,"Saunders, Ron Moultrie",Symbiotic Relationships (panel 2 of 5),37.73248202,-122.391314
+2013,2007.18,"Saunders, Ron Moultrie",Symbiotic Relationships (panel 4 of 5),37.73248202,-122.391314
+2013,2007.5.2.a-j,"Saunders, Ron Moultrie",Symbiotic Relationships,37.73248202,-122.391314
+2013,2007.10.1,"Saunders, Ron Moultrie",Spirit and Nature Dancing Together (panel 3 of 4),37.73248202,-122.391314
+2013,2007.11.3.a-l,"Saunders, Ron Moultrie",Spirit and Nature Dancing Together (panel 4 of 4),37.73248202,-122.391314
+2013,2007.30.3.a-h,"Saunders, Ron Moultrie",Symbiotic Relationships (panel 3 of 5),37.73248202,-122.391314
+2013,2007.21.2.a-d,"Saunders, Ron Moultrie",Spirit and Nature Dancing Together (panel 1 of 4),37.73248202,-122.391314
+2013,2007.8.3.a-j,"Saunders, Ron Moultrie",Spirit and Nature Dancing Together (panel 2 of 4),37.73248202,-122.391314
+2013,2007.6.1-2,"Thomas, Hank Willis",Impossibly,37.62043,-122.399165
+2014,2007.34.3,"Blackstone, Amy",Boeddeker's Blooming Bounty,37.78416601,-122.411974
+2014,2008.1.a,"Britton, Val",Voyage,37.62043,-122.399165
+2014,2008.1.c,"Fontana, Bill",Sonic Dreamscape,37.802796,-122.412319
+2014,2008.1.e,"Haddad, Laura; Drugan, Tom",Bayview Rise,37.74594305,-122.3840473
+2014,2008.1.b,"Melchert, Jim",Riven / River,37.62043,-122.399165
+2014,2007.19,Merge Conceptual Design,Sky,37.62043,-122.399165
+2014,2007.34.4,MoreLab,Handsignals,37.77159005,-122.4225299
+2014,2013.1,"Staller, Eric",Spirogyrate,37.62043,-122.399165
+2015,2007.33,"Attie, Shimon",Spiral of Gratitude,37.772515,-122.389065
+2015,2008.10.z,"Bendolph, Louisiana",New Generation,37.62043,-122.399165
+2015,2008.13.1,"Blum, Nancy",Revival [Arnica and Angelica;  Foxglove and Aconite; Passion Flower and Yarrow; Monkshood and Echinacea; and Passion Flower and Foxglove],37.75632799,-122.405817
+2015,2008.10.s,"Ellingson, Amy",Untitled (Large Variation),37.62043,-122.399165
+2015,2007.34.2,"Galloway, Stephen",Redbud Redux Suite,37.75632799,-122.405817
+2015,2011.24,"Garcia, Rupert",Nature of Medicine,37.75632799,-122.405817
+2015,2008.1.f,"Garten, Cliff",Ethereal Bodies 8,37.75632799,-122.405817
+2015,2008.13.6,"Howard, Mildred",Forever Yours,37.75632799,-122.405817
+2015,2008.10.f,"Kos, Paul",First Responder Plaza,37.77202005,-122.3897099
+2015,2008.8,"Kos, Paul",Quaking Aspens,37.75632799,-122.405817
+2015,2007.34.1-5,"Martinez, Jetro",Amate San Francisco,37.75632799,-122.405817
+2015,2008.9,"Masaoka, Alan",River of Time,37.75632799,-122.405817
+2015,2011.30.a-n,"Morales, Julio Cesar",Repeat Melody,37.75632799,-122.405817
+2015,2007.34.1,"Murch, Anna Valentina",Archipelago,37.75632799,-122.405817
+2015,2008.1.a-f,"Nagase, Masayuki",Breath Between Sky and Ocean [Boulder],37.75632799,-122.405817
+2015,2007.34.5,"Nagase, Masayuki",Breath Between Sky and Ocean [Paver],37.75632799,-122.405817
+2015,2011.29.a,"Nagase, Masayuki",Breath Between Sky and Ocean [Seating],37.75632799,-122.405817
+2015,2008.14,"Nagase, Masayuki",Breath Between Sky and Ocean,37.75632799,-122.405817
+2015,2008.1.d,"Otterness, Tom",Mother with Children with Hearts,37.75632799,-122.405817
+2015,2008.4.a-c,"Otterness, Tom","Mother with Children with Hearts [Heart Figures Couple, Dr. and Patient with Crutch]",37.75632799,-122.405817
+2015,2008.10.i,"Otterness, Tom",Mother with Children with Hearts [Sunbathing Heart Figure w/Shoes],37.75632799,-122.405817
+2015,2008.10.g,"Otterness, Tom",Mother with Children with Hearts [Seated Heart Figure with Baby Heart w/Thermometer],37.75632799,-122.405817
+2015,2008.10.h,"Otterness, Tom",Mother with Children with Hearts [Leaning Heart Figure w/Phone],37.75632799,-122.405817
+2015,2008.10.q,"Otterness, Tom",Mother with Children with Hearts [Seated Heart Figures Couple],37.75632799,-122.405817
+2015,2008.10.n,"Otterness, Tom",Mother with Children with Hearts [Mother],37.75632799,-122.405817
+2015,2008.10.w,"Otterness, Tom",Mother with Children with Hearts [Heart Figure in Wheelchair],37.75632799,-122.405817
+2015,2008.13.4,"Otterness, Tom",Mother with Children with Hearts [Walking Heart Figure w/Hat],37.75632799,-122.405817
+2015,2008.10.a-aa,"Stern, Arthur",The Streets and Hills of San Francisco,37.75632799,-122.405817
+2015,2008.10.t,"Wolff, Lena",Tree of Life,37.75632799,-122.405817
+2015,2008.10.a,"Wolff, Lena",Circular Path,37.75632799,-122.405817
+2015,2008.10.k,"Wolff, Lena",Quail and Monkey Branch,37.75632799,-122.405817
+2016,2008.10.c,"Colburn, Adriane",Shadow Kingdom,37.76647005,-122.3963199
+2016,2008.11.a-d,"Liu, Crystal","Underground, ""Stuck in Between""",37.61242626,-122.3937406
+2016,2008.12.c,"McGee, Barry",Untitled,37.62043,-122.399165
+2016,2011.29.b,"Trautman, Benjamin",Flight,37.76442298,-122.438148
+2016,2008.6.c,Wowhaus,Garden Guardians,37.75136402,-122.428975
+2017,2008.10.y,"Ando, Miya",November Evening Cloud 4.6,37.61242626,-122.3937406
+2017,2008.7.a,"Axelrad, Merle",Sentinel,37.73976799,-122.377978
+2017,2008.6.d,"Burd, Natalya",So much more than this,37.61242626,-122.3937406
+2017,2013.3.b,"Chiara, John","Cabrillo Highway at Pescadero Creek Road, Variation 4",37.61242626,-122.3937406
+2017,2008.7.b,"Deutsch, Richard",Alma,37.73976799,-122.377978
+2017,2008.10.m,"Ezawa, Kota",Mondrian Meets The Beatles,37.62043,-122.399165
+2017,2008.10.j,"Garten, Cliff",Islais,37.74611003,-122.3871099
+2017,2013.3.a,"Garza, Carmen Lomas",The California Condor,37.76375748,-122.415227
+2017,2008.10.b,"Garza, Carmen Lomas",The Great Blue Heron,37.76375748,-122.415227
+2017,T2009.3,"Loewenthal, Terri","Psychscape 18 (Banner Ridge, CA)",37.61242626,-122.3937406
+2017,2008.10.x,"Loewenthal, Terri","Psychscape 73 (Downs, Mount, CA)",37.61242626,-122.3937406
+2017,2008.6.a,"McCarthy, Alicia",Untitled,37.62043,-122.399165
+2017,2013.3.a-b,"McKenna, Klea",Born in 1717,37.61242626,-122.3937406
+2017,2008.10.p,"Norris, Sirron",Land of the Helping Hand,37.75632799,-122.405817
+2017,2008.6.b,"Shaw, Alice",No Other Lands Their Glory Know,37.62043,-122.399165
+2017,2008.12.b,"Sowers, Charles",Solar Totems,37.73598004,-122.4419099
+2017,2011.25.1-7,"Thomas, Hank Willis","They are Us, Us is Them",37.62043,-122.399165
+2017,2008.13.1-6,"Whyte, Steven",Comfort Women's Column of Strength,37.79245127,-122.4054364
+2018,2008.10.r,"Alexopoulos, Yorgo",Split,37.62043,-122.399165
+2018,2008.13.3,"Chronister, James",California (1),37.61242626,-122.3937406
+2018,2008.10.u,"Corday, Christine",Geneses,37.784395,-122.401875
+2018,2008.10.o,"Finch, Spencer",Orion,37.62043,-122.399165
+2018,2008.7.a-b,"Rosenberg, Leah",Everywhere a Color,37.62043,-122.399165
+2019,2009.7.17,"Arzabe, Miguel",Culture Fabric (Bay Area),37.61242626,-122.3937406
+2019,T2009.1,"Cain, Sarah",We Will Walk Right Up to the Sun,37.61242626,-122.3937406
+2019,2011.29.a-c,"De Othello, Woody",Light,37.62043,-122.399165
+2019,2017.4.a-b,"De Othello, Woody",Turn,37.62043,-122.399165
+2019,2009.7.16,"De Othello, Woody",Time,37.62043,-122.399165
+2019,2011.29.c,"Drew, Leonardo",Number 69S,37.62043,-122.399165
+2019,2009.7.1,"Glynn, Liz",Terra-Techne,37.62043,-122.399165
+2019,2008.12.a,"Grawunder, Johanna",Coding,37.63655001,-122.40055
+2019,2008.10.aa,"Handforth, Mark",Red Cadmium Giant,37.62043,-122.399165
+2019,2008.13.2,"Harvey, Ellen",Green Map,37.61242626,-122.3937406
+2019,2008.10.v,"Hashimoto, Jacob",This Infinite Gateway of Time and Circumstance,37.61242626,-122.3937406
+2019,2008.10.d,"JÃ¤gel, Jason",The Author & Her Story,37.62043,-122.399165
+2019,2009.7.7,"Kosuth, Joseph",W.F.T. (San Francisco),37.77806101,-122.41732
+2019,2013.4.a-b,"Minervini, Robert",Hyper-Natural Bay Area or Bay Area Hyper-Naturalism (which title is correct?),37.62043,-122.399165
+2019,2009.7.1-24,"Nawa, Kohei",Ether,37.61242626,-122.3937406
+2019,2008.13.5,"Pehrson, Tahiti",Circadian Transit,37.61242626,-122.3937406
+2019,2008.10.e,"Sesay, Muzae",Where Community Happens,37.78263411,-122.4157695
+2019,2008.12.a-c,"Villareal, Leo",Point Cloud,37.78327003,-122.4026999
+2019,2008.10.l,"Wilson, David","Winter/Spring, Standing in Claremont Canyon",37.61242626,-122.3937406
+2020,2009.7.13,"Colburn, Adriane",Geologic Ghost,37.78668402,-122.394391
+2020,2013.4.b,"Hemenway, Dana",The Color of Horizons,37.62043,-122.399165
+2020,2009.7.3,"Ohtake, Moto",Microcosmic,37.77833003,-122.39654
+2020,2009.7.11,"Vogt, Andrew (Andy)",Unfolding Space,37.62043,-122.399165
+1930s,1923.2.1,"Bufano, Beniamino",Rabbit,37.76665001,-122.42229
+1930s,1923.2.1-2,"Bufano, Beniamino",Penguins,37.7969565,-122.3982481
+1930s,1937.4,"Bufano, Beniamino",Cat and Mouse,37.76665001,-122.42229
+1930s,1930.1,"Bufano, Beniamino",Bear and Cubs,37.76665001,-122.42229
+1930s,1942.7,"Bufano, Beniamino",Small Fish--Big Fish,37.76665001,-122.42229
+1930s,1942.3,"Bufano, Beniamino",Frog,37.80640001,-122.423925
+1930s,1942.6,"Bufano, Beniamino",Two Sea Lions,37.76665001,-122.42229
