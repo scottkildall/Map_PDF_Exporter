@@ -15,63 +15,24 @@
   
 */
 
-/*
-
-  Pseudocode
-  
-  latitude    = 41.145556; // (φ)
-  longitude   = -73.995;   // (λ)
-
-  mapWidth    = 200;
-  mapHeight   = 100;
-
-  // get x value
-  x = (longitude+180)*(mapWidth/360)
-
-  // convert from degrees to radians
-  latRad = latitude*PI/180;
-
-  // get y value
-  mercN = ln(tan((PI/4)+(latRad/2)));
-  y     = (mapHeight/2)-(mapWidth*mercN/(2*PI));
-  
-  ---------------
-  abstract class Mercator {
-    final static double RADIUS_MAJOR = 6378137.0;
-    final static double RADIUS_MINOR = 6356752.3142;
- 
-    abstract double yAxisProjection(double input);
-    abstract double xAxisProjection(double input);
-}
-
-  
-  public class SphericalMercator extends Mercator {
- 
-    @Override
-    double xAxisProjection(double input) {
-        return Math.toRadians(input) * RADIUS_MAJOR;
-    }
- 
-    @Override
-    double yAxisProjection(double input) {
-        return Math.log(Math.tan(Math.PI / 4 + Math.toRadians(input) / 2)) * RADIUS_MAJOR;
-    }
-}
-*/
-
-
 //-- this is a build in PDF library for Processing that allows for export 
 import processing.pdf.*;
 
-MercatorMap mapper;
-
 //---------------------------------------------------------------------------
 //-- DEFAULT VARIABLES
-final float defaultSize = 5;
+final float defaultSize = 15;
 final int defaultCategoryNum = 0;
 final float  margin = 50;
-float screenWidth;
-float screenHeight;
+
+final int startYear = 1967;
+final int endYear = 2013;
+int numYears;
+
+
+final float homeLat = 37.777133;
+final float homeLon = -122.452745;
+float homeX;
+float homeY;
 
 //---------------------------------------------------------------------------
 //-- this is a flag. When you press the SPACE bar, it will set to TRUE
@@ -96,28 +57,23 @@ float latAdjust;
 //---------------------------------------------------------------------------
 
 
-// 1 degree of longitude = 54.6 miles
-// 1 degree of latutide = 69 miles
-// this is the ratio between them
-float latLonAdjustment = 1.2637;
-
 //
 void setup() {
   //-- right now width and height have to be the same, otherwise it won't map properly
   //-- set to something like (2400,2400) for a large image
-  size(1000,800);
+  size(800,800);
   
+ 
+  loadData(sketchPath() + "/" +  "data_input.csv");
   
+  numYears = endYear - startYear;
   
-  loadData("data_input.csv");
-    
-  mapper = new MercatorMap(99.13876*10,47.344696*10, maxLat, minLat , minLon, maxLon );
-    
-  rectMode(CENTER);
-  ellipseMode(CENTER);
+  homeX = map(homeLon, (minLon - lonAdjust), (maxLon + lonAdjust), margin, width - margin);
+  homeY = map(homeLat, (minLat - latAdjust), (maxLat + latAdjust), height - margin, margin) * 1.3333 - 100;
   
-  screenWidth  = width;
-  screenHeight = height;
+  println(homeX);
+  println(homeY);
+  
 }
 
 void draw() {
@@ -126,17 +82,21 @@ void draw() {
   
   
   //-- respond to flag for recording
-  if( recordToPDF ) {
+  if( recordToPDF )
     beginRecord(PDF, "data_output.pdf");
-  }
+  
   
   // use various strokes and weights to respond to size here
   fill(0,0,255);
   noStroke();
+  //stroke(127,127,127);
   strokeWeight(0);
   
   //-- draw data
   drawAllData();
+  
+  rectMode(CENTER);
+  ellipseMode(CENTER);
   
   //-- done recording to PDF, set flag to false and flash white to indicate that we have recorded
   if( recordToPDF ) {
@@ -160,32 +120,26 @@ void loadData(String filename) {
     float x = row.getFloat("Longitude");
     float y = row.getFloat("Latitude");
     
-     if( x < minLon ) {
+     if( x < minLon )
       minLon = x;
-    }
-    else if( x > maxLon ) {
+    else if( x > maxLon )
       maxLon = x;
-    }
     
-     //println("y = " + y);
-     //  println("maxLat = " + maxLat);
-    if( y < minLat ) {
+    if( y < minLat )
       minLat = y;
-    }
-    
-    if( y > maxLat ) {
+    else if( y > maxLat )
       maxLat = y;
-    }
   }  
   
   //-- determine various ranges and make simple math adjustments for plotting on the screen
-  println("min lon (Y) = " + minLon );
-  println("min lat (X) = " + minLat );
-  println("max lon (Y) = " + maxLon );
-  println("max lat (X) = " + maxLat );
+  println("min X =" + minLon );
+  println("min Y =" + minLat );
+  println("max X =" + maxLon );
+  println("max Y =" + maxLat );
   
   lonRange = maxLon-minLon;
   latRange = maxLat-minLat;
+  
   
   println("lon range = " + lonRange );
   println("lat range = " + latRange );
@@ -210,35 +164,24 @@ void loadData(String filename) {
 
 //-- draw each data
 void drawAllData() {
-  /*
-  println("----------------");
-  float xLeft = (minLon - lonAdjust);
-  float xRight = (maxLon + lonAdjust);
-   float yLeft = (minLat - latAdjust);
-   float yRight = (maxLat + latAdjust);
-   println("x left = " + xLeft );
-   println("x right = " + xRight );
-   println("y left = " + yLeft );
-   println("y right = " + yRight );
-    println("x size = " + (xRight-xLeft) );
-  println("y size = " + (yRight-yLeft) );
-  println("----------------");
-  */
-  
-   // Re-do CENTER drawing b/c PDFs operate strangle
-   rectMode(CENTER);
-   ellipseMode(CENTER);
-    
   for (TableRow row : table.rows()) {
     
     float x = row.getFloat("Longitude");
     float y = row.getFloat("Latitude");
+    
+    //-- OUR CUSTOM ROTUINES GO HERE
     float s = getSizeData(row);       // size
-    int year = getYearData(row);   // category 
-   // String buildingType = row.getString("Facility");
+    
+    
+    // some examples
+    //int c = getCategoryData(row);   // category 
+    int year = getYearData(row);
    
+    String crimeType = getCrimeTypeData(row);
+     
     //-- draw data point here
-    drawDatum(x,y, s, year);
+    // MODIFY THIS FUNCTION
+    drawDatum(x,y, crimeType);
   }
 }
 
@@ -251,11 +194,6 @@ float getSizeData(TableRow row) {
       //-- there IS size column
       s = row.getFloat("Size");
       
-      // modify the size data here:
-      // Cisterns: use something like  s = s/10000;
-      // Prisons: use soemthing like s = s/400;
-      s = s/400;
-      
     } catch (Exception e) {
       //-- there is NO size column in this data set
       //-- no size coulumn, set s to plottable value
@@ -267,8 +205,41 @@ float getSizeData(TableRow row) {
 
 //-- read .category column, if there is none, then we use a default category
 //-- category is always an int
+int getCategoryData(TableRow row) {
+   int c = defaultCategoryNum;
+
+   //-- Process size column
+    try {
+      //-- there IS size column
+      c = row.getInt("Category");
+    } catch (Exception e) {
+      //-- there is NO category column in this data set
+      //-- OR there is a non-integer
+    }
+    
+    return c;
+}
+
+String getCrimeTypeData(TableRow row) {
+   String s = "";
+   
+   //-- Process size column
+    try {
+      //-- there IS size column
+      s = row.getString("Types of crime");
+    } catch (Exception e) {
+      //-- there is NO category column in this data set
+      //-- OR there is a non-integer
+    }
+    
+    return s;   
+}
+
+//--Types of crime
+
+//-- category is always an int
 int getYearData(TableRow row) {
-   int y = 2004;    // default
+   int y = startYear;
 
    //-- Process size column
     try {
@@ -282,42 +253,61 @@ int getYearData(TableRow row) {
     return y;
 }
 
-void drawDatum(float x, float y, float dataSize, int year) {
+
+void drawDatum(float x, float y, String crimeType) {
+  // numYears is in range 75 years
   
-  //float drawX = map(x, (minLon - lonAdjust), (maxLon + lonAdjust), margin, (float)(screenWidth - margin) );
-  //float drawY = map(y, (minLat - latAdjust), (maxLat + latAdjust), (float)(screenHeight - margin), margin) * latLonAdjustment;
+  //println(dataSize);
+  float drawX = map(x, (minLon - lonAdjust), (maxLon + lonAdjust), margin, width - margin);
+  float drawY = map(y, (minLat - latAdjust), (maxLat + latAdjust), height - margin, margin) * 1.3333 - 100;
   
-  // inconsistent results...
-  float drawX = mapper.getScreenX(x);
-  //drawX = (y+180)*(screenWidth/360);
   
-  float drawY = mapper.getScreenY(y);
+  //println(crimeType);
   
-  if( dataSize > 10 ) {
-  fill(255,0,0);
-  ellipse(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles   
+   //-- This is the stroke weight
+  strokeWeight(0);
+  
+  //-- This is the color
+  stroke(128,128,128);
+  
+  int dataSize = 5;
+  
+  //-- This is our fill color
+  // YEAR EXAMPLE
+  //fill(255,50,50, 255-(4*numYears));
+  if( crimeType.equals("Violent Crime") ) {
+    fill(255,50,50);
+  }
+  else if( crimeType.equals("Misdemeanors") ) {
+    fill(50,255,50);
+  }
+  else if( crimeType.equals("Other") ) {
+    fill(50,255,255);
+  }
+  else if( crimeType.equals("General Accidents (Not Crimes)") ) {
+    fill(50,50,255);
+  }
+  else if( crimeType.equals("Felonies") ) {
+    fill(255,255,50);
+    dataSize = 5;
   }
   else {
-    fill(0,255,0);
-    rect(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles    
+    fill(128,128,128);
   }
   
-  /*
-  if( buildingType.equals("jail") ) {
-    fill(255,0,0);
-    ellipse(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles   
-  }
-  else if( buildingType.equals("prison") ) {
-    fill(0,180,240);
-    rect(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles   
-   } 
-   else if( buildingType.equals("facility") ) {
-    fill(255,255,255);
-    ellipse(drawX, drawY, dataSize, dataSize/4); // Constraint of where circles appear and size of circles   
-  } 
-  */
- }
+ 
   
+  // adjust our size 
+ // dataSize = dataSize / 15000;
+   
+   
+  //-- draw reactangle
+  //rect(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
+  
+  // draw circle
+  ellipse(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
+  
+}
 
 void keyPressed() {
   if( key == ' ' )

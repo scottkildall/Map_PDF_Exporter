@@ -61,7 +61,7 @@ float latAdjust;
 void setup() {
   //-- right now width and height have to be the same, otherwise it won't map properly
   //-- set to something like (2400,2400) for a large image
-  size(2400,2400);
+  size(800,800);
   
  
   loadData(sketchPath() + "/" +  "data_input.csv");
@@ -175,12 +175,11 @@ void drawAllData() {
     
     // some examples
     //int c = getCategoryData(row);   // category 
-    int acres = getAcres(row);
+    int year = getYearData(row);
    
- 
     //-- draw data point here
     // MODIFY THIS FUNCTION
-    drawDatum(x,y, acres);
+    drawDatum(x,y, s, year);
   }
   
   //-- draw home
@@ -223,83 +222,68 @@ int getCategoryData(TableRow row) {
     return c;
 }
 
-String getDateName(TableRow row) {
-   String s = "";
-   
-   //-- Process size column
-    try {
-      //-- there IS size column
-      s = row.getString("name");
-    } catch (Exception e) {
-      //-- there is NO category column in this data set
-      //-- OR there is a non-integer
-    }
-    
-    return s;   
-}
-
-//--Types of crime
-
 //-- category is always an int
-int getAcres(TableRow row) {
-   int acres = 0;
+int getYearData(TableRow row) {
+   int y = startYear;
 
    //-- Process size column
     try {
       //-- there IS size column
-      acres = row.getInt("Acres");
+      y = row.getInt("Year");
     } catch (Exception e) {
       //-- there is NO category column in this data set
       //-- OR there is a non-integer
     }
     
-    return acres;
+    return y;
 }
 
 
-void drawDatum(float x, float y, int acres) {
+void drawDatum(float x, float y, float dataSize, int year) {
   
- 
+  // Bigfoot exmaple
+  int lastYear = 2016;
+  int numYears = lastYear - year;
+
  
   // numYears is in range 75 years
   
-  println(acres);
-  
-  
-  
+  //println(dataSize);
   float drawX = map(x, (minLon - lonAdjust), (maxLon + lonAdjust), margin, width - margin);
   float drawY = map(y, (minLat - latAdjust), (maxLat + latAdjust), height - margin, margin) * 1.3333 - 100;
   
   
+  //-- some year code mapping examples
+/*
+  //-- you can draw a rectangle or other shapes here
+  int minRed = 100;
+  int maxRed = 255;
   
-   //-- This is the stroke weight
+  //-- 1st parameter = data value
+  //-- 2nd & 3rd parameter = INPUT range
+  //-- 4th and 5th parameter = OUTPUT range
+  
+  float r = map(year, startYear, endYear, minRed, maxRed);
+  
+
+  // red
+  fill(r,0,0);
+  */
+  
+  //-- This is our fill color
+  // YEAR EXAMPLE
+  //fill(255,50,50, 255-(4*numYears));
+  fill(255,50,50);
+  
+  //-- This is the stroke weight
   strokeWeight(0);
   
   //-- This is the color
   stroke(128,128,128);
   
-  float dataSize = sqrt(acres);
-  println(dataSize);
-  
-  if( dataSize < 1 ) {
-    dataSize = 1;
-  }
-  if( dataSize > 12 ) {
-   dataSize = 5; 
-  }
-  
-  //-- This is our fill color
-  // YEAR EXAMPLE
-  fill(255,50,50);
- 
-
- 
- 
- 
-  
   // adjust our size 
  // dataSize = dataSize / 15000;
-   
+   dataSize = 10;
    
   //-- draw reactangle
   //rect(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
@@ -308,24 +292,6 @@ void drawDatum(float x, float y, int acres) {
   ellipse(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
   
 }
-
-String getSeason(String input) {
-  String month = input.substring(0, 3).toLowerCase(); // Extracting the first three letters of the input and converting to lowercase
-  
-  if (month.equals("jan") || month.equals("feb") || month.equals("dec")) {
-    return "Winter";
-  } else if (month.equals("mar") || month.equals("apr") || month.equals("may")) {
-    return "Spring";
-  } else if (month.equals("jun") || month.equals("jul") || month.equals("aug")) {
-    return "Summer";
-  } else if (month.equals("sep") || month.equals("oct") || month.equals("nov")) {
-    return "Autumn";
-  }
-  
-  return ""; // Return empty string if no match
-}
-
-
 
 void keyPressed() {
   if( key == ' ' )
