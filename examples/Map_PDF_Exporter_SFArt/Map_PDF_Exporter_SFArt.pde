@@ -1,17 +1,7 @@
 /*
-  Map_PDF_Exporter
-  Written by Scott Kildall
-  September 2017
+  Map_PDF_SFArt
   
-  Renders out a simple CSV file to (x,y) points on the screen
-  Looks for 2 header columns: "Latitude" and "Longitude"
-  
-  This version includes a "Size" field
-  
-  Output file is: data_output.pdf
-  Input file is: data_input.csv
-  
-  Spacebar will save the file
+  Based on Map_Exporter_Flat
   
 */
 
@@ -169,19 +159,12 @@ void drawAllData() {
     float x = row.getFloat("Longitude");
     float y = row.getFloat("Latitude");
     
-    //-- OUR CUSTOM ROTUINES GO HERE
-    float s = getSizeData(row);       // size
-    
-    
     // some examples
-    //int c = getCategoryData(row);   // category 
-    int year = getYearData(row);
+    String artistName = getArtistName(row);
    
-    String crimeType = getCrimeTypeData(row);
-     
     //-- draw data point here
     // MODIFY THIS FUNCTION
-    drawDatum(x,y, crimeType);
+    drawDatum(x,y, artistName);
   }
   
   //-- draw home
@@ -209,104 +192,56 @@ float getSizeData(TableRow row) {
 
 //-- read .category column, if there is none, then we use a default category
 //-- category is always an int
-int getCategoryData(TableRow row) {
-   int c = defaultCategoryNum;
+String getArtistName(TableRow row) {
+   String aName = "";
 
    //-- Process size column
     try {
       //-- there IS size column
-      c = row.getInt("Category");
+      aName = row.getString("artist");
     } catch (Exception e) {
       //-- there is NO category column in this data set
       //-- OR there is a non-integer
     }
     
-    return c;
+    return aName;
 }
 
-String getCrimeTypeData(TableRow row) {
-   String s = "";
-   
-   //-- Process size column
-    try {
-      //-- there IS size column
-      s = row.getString("Types of crime");
-    } catch (Exception e) {
-      //-- there is NO category column in this data set
-      //-- OR there is a non-integer
-    }
-    
-    return s;   
-}
-
-//--Types of crime
-
-//-- category is always an int
-int getYearData(TableRow row) {
-   int y = startYear;
-
-   //-- Process size column
-    try {
-      //-- there IS size column
-      y = row.getInt("Year");
-    } catch (Exception e) {
-      //-- there is NO category column in this data set
-      //-- OR there is a non-integer
-    }
-    
-    return y;
-}
-
-
-void drawDatum(float x, float y, String crimeType) {
-  
- 
- 
-  // numYears is in range 75 years
-  
+void drawDatum(float x, float y, String artistName) {
   //println(dataSize);
   float drawX = map(x, (minLon - lonAdjust), (maxLon + lonAdjust), margin, width - margin);
   float drawY = map(y, (minLat - latAdjust), (maxLat + latAdjust), height - margin, margin) * 1.3333 - 100;
   
   
-  //println(crimeType);
+ int dataSize = 5;
   
-   //-- This is the stroke weight
+  //-- This is our fill color
+  // YEAR EXAMPLE
+  //fill(255,50,50, 255-(4*numYears));
+  
+  if( artistName.equals("Saulls, Vicki")) {
+     fill(255, 0 , 0);
+  
+  }
+  else if( artistName.equals("Bullock, George")) {
+     fill(0, 255 , 0);
+  
+  }
+  else if( artistName.equals("Nagase, Masayuki")) {
+     fill(0, 0 , 255);
+     dataSize = 10;
+   
+  }
+  else {
+    fill(128, 128 , 128);
+  }
+  
+  //-- This is the stroke weight
   strokeWeight(0);
   
   //-- This is the color
   stroke(128,128,128);
   
-  int dataSize = 5;
-  
-  //-- This is our fill color
-  // YEAR EXAMPLE
-  //fill(255,50,50, 255-(4*numYears));
-  if( crimeType.equals("Violent Crime") ) {
-    fill(255,50,50);
-  }
-  else if( crimeType.equals("Misdemeanors") ) {
-    fill(50,255,50);
-  }
-  else if( crimeType.equals("Other") ) {
-    fill(50,255,255);
-  }
-  else if( crimeType.equals("General Accidents (Not Crimes)") ) {
-    fill(50,50,255);
-  }
-  else if( crimeType.equals("Felonies") ) {
-    fill(255,255,50);
-    dataSize = 5;
-  }
-  else {
-    fill(128,128,128);
-  }
-  
- 
-  
-  // adjust our size 
- // dataSize = dataSize / 15000;
-   
    
   //-- draw reactangle
   //rect(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 

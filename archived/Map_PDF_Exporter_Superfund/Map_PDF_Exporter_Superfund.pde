@@ -1,18 +1,6 @@
 /*
-  Map_PDF_Exporter
+  Map_PDF_Exporter_Superfund
   Written by Scott Kildall
-  September 2017
-  
-  Renders out a simple CSV file to (x,y) points on the screen
-  Looks for 2 header columns: "Latitude" and "Longitude"
-  
-  This version includes a "Size" field
-  
-  Output file is: data_output.pdf
-  Input file is: data_input.csv
-  
-  Spacebar will save the file
-  
 */
 
 //-- this is a build in PDF library for Processing that allows for export 
@@ -170,19 +158,16 @@ void drawAllData() {
     float y = row.getFloat("Latitude");
     
     //-- OUR CUSTOM ROTUINES GO HERE
-    float s = getSizeData(row);       // size
-    
-    
-    // some examples
-    //int c = getCategoryData(row);   // category 
-    int year = getYearData(row);
-   
-    String crimeType = getCrimeTypeData(row);
+    String nplStatus = getNPLStatusData(row);
      
     //-- draw data point here
     // MODIFY THIS FUNCTION
-    drawDatum(x,y, crimeType);
+    drawDatum(x,y, nplStatus);
   }
+  
+  //-- draw home
+  //fill(255,0,0);
+  //ellipse(homeX, homeY, 10,10);
 }
 
 //-- read .size column, if there is none, then we use a default size variable (global)
@@ -220,13 +205,13 @@ int getCategoryData(TableRow row) {
     return c;
 }
 
-String getCrimeTypeData(TableRow row) {
+String getNPLStatusData(TableRow row) {
    String s = "";
    
    //-- Process size column
     try {
       //-- there IS size column
-      s = row.getString("Types of crime");
+      s = row.getString("NPL Status");
     } catch (Exception e) {
       //-- there is NO category column in this data set
       //-- OR there is a non-integer
@@ -254,58 +239,35 @@ int getYearData(TableRow row) {
 }
 
 
-void drawDatum(float x, float y, String crimeType) {
-  // numYears is in range 75 years
-  
-  //println(dataSize);
+void drawDatum(float x, float y, String nplStatus) {
   float drawX = map(x, (minLon - lonAdjust), (maxLon + lonAdjust), margin, width - margin);
   float drawY = map(y, (minLat - latAdjust), (maxLat + latAdjust), height - margin, margin) * 1.3333 - 100;
   
-  
-  //println(crimeType);
-  
-   //-- This is the stroke weight
+  //-- This is the stroke weight
   strokeWeight(0);
   
   //-- This is the color
   stroke(128,128,128);
   
-  int dataSize = 5;
-  
-  //-- This is our fill color
-  // YEAR EXAMPLE
-  //fill(255,50,50, 255-(4*numYears));
-  if( crimeType.equals("Violent Crime") ) {
+  //-- This is our fill color 
+  if( nplStatus.equals("Proposed NPL") ) {
     fill(255,50,50);
   }
-  else if( crimeType.equals("Misdemeanors") ) {
+  else if( nplStatus.equals("Final NPL") ) {
     fill(50,255,50);
   }
-  else if( crimeType.equals("Other") ) {
+  else if( nplStatus.equals("Deleted NPL") ) {
     fill(50,255,255);
   }
-  else if( crimeType.equals("General Accidents (Not Crimes)") ) {
+  else if( nplStatus.equals("Not NPL") ) {
     fill(50,50,255);
-  }
-  else if( crimeType.equals("Felonies") ) {
-    fill(255,255,50);
-    dataSize = 5;
   }
   else {
     fill(128,128,128);
   }
   
- 
-  
-  // adjust our size 
- // dataSize = dataSize / 15000;
-   
-   
-  //-- draw reactangle
-  //rect(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
-  
   // draw circle
-  ellipse(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
+  ellipse(drawX, drawY, 5, 5); // Constraint of where circles appear and size of circles 
   
 }
 

@@ -1,18 +1,6 @@
 /*
-  Map_PDF_Exporter
+  Map_PDF_Exporter_Prisons
   Written by Scott Kildall
-  September 2017
-  
-  Renders out a simple CSV file to (x,y) points on the screen
-  Looks for 2 header columns: "Latitude" and "Longitude"
-  
-  This version includes a "Size" field
-  
-  Output file is: data_output.pdf
-  Input file is: data_input.csv
-  
-  Spacebar will save the file
-  
 */
 
 //-- this is a build in PDF library for Processing that allows for export 
@@ -169,12 +157,12 @@ void drawAllData() {
     float x = row.getFloat("Longitude");
     float y = row.getFloat("Latitude");
     
-    // some examples
-    String artistName = getArtistName(row);
-   
+    //-- OUR CUSTOM ROTUINES GO HERE
+    int size = getSizeData(row);
+     
     //-- draw data point here
     // MODIFY THIS FUNCTION
-    drawDatum(x,y, artistName);
+    drawDatum(x,y, size);
   }
   
   //-- draw home
@@ -183,13 +171,13 @@ void drawAllData() {
 }
 
 //-- read .size column, if there is none, then we use a default size variable (global)
-float getSizeData(TableRow row) {
-   float s = defaultSize;
+int getSizeData(TableRow row) {
+   int s = 5;
 
    //-- Process size column
     try {
       //-- there IS size column
-      s = row.getFloat("Size");
+      s = row.getInt("Size");
       
     } catch (Exception e) {
       //-- there is NO size column in this data set
@@ -202,20 +190,37 @@ float getSizeData(TableRow row) {
 
 //-- read .category column, if there is none, then we use a default category
 //-- category is always an int
-String getArtistName(TableRow row) {
-   String aName = "";
+int getCategoryData(TableRow row) {
+   int c = defaultCategoryNum;
 
    //-- Process size column
     try {
       //-- there IS size column
-      aName = row.getString("artist");
+      c = row.getInt("Category");
     } catch (Exception e) {
       //-- there is NO category column in this data set
       //-- OR there is a non-integer
     }
     
-    return aName;
+    return c;
 }
+
+String getNPLStatusData(TableRow row) {
+   String s = "";
+   
+   //-- Process size column
+    try {
+      //-- there IS size column
+      s = row.getString("NPL Status");
+    } catch (Exception e) {
+      //-- there is NO category column in this data set
+      //-- OR there is a non-integer
+    }
+    
+    return s;   
+}
+
+//--Types of crime
 
 //-- category is always an int
 int getYearData(TableRow row) {
@@ -234,37 +239,9 @@ int getYearData(TableRow row) {
 }
 
 
-void drawDatum(float x, float y, String artistName) {
-  
- 
- 
-  //println(dataSize);
+void drawDatum(float x, float y, int size) {
   float drawX = map(x, (minLon - lonAdjust), (maxLon + lonAdjust), margin, width - margin);
   float drawY = map(y, (minLat - latAdjust), (maxLat + latAdjust), height - margin, margin) * 1.3333 - 100;
-  
-  
- int dataSize = 5;
-  
-  //-- This is our fill color
-  // YEAR EXAMPLE
-  //fill(255,50,50, 255-(4*numYears));
-  
-  if( artistName.equals("Saulls, Vicki")) {
-     fill(255, 0 , 0);
-  
-  }
-  else if( artistName.equals("Bullock, George")) {
-     fill(0, 255 , 0);
-  
-  }
-  else if( artistName.equals("Nagase, Masayuki")) {
-     fill(0, 0 , 255);
-     dataSize = 10;
-   
-  }
-  else {
-    fill(128, 128 , 128);
-  }
   
   //-- This is the stroke weight
   strokeWeight(0);
@@ -272,15 +249,17 @@ void drawDatum(float x, float y, String artistName) {
   //-- This is the color
   stroke(128,128,128);
   
-  // adjust our size 
- // dataSize = dataSize / 15000;
+  size = 3;
+  //size = size/300;
+  //if( size < 2 ) {
+  //  size = 2;
+  //}
   
-   
-  //-- draw reactangle
-  //rect(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
+  
+  fill(255,128,0);
   
   // draw circle
-  ellipse(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
+  ellipse(drawX, drawY, size, size); // Constraint of where circles appear and size of circles 
   
 }
 

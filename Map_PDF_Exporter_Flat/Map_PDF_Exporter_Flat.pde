@@ -201,38 +201,6 @@ float getSizeData(TableRow row) {
     return s;
 }
 
-//-- read .category column, if there is none, then we use a default category
-//-- category is always an int
-int getCategoryData(TableRow row) {
-   int c = defaultCategoryNum;
-
-   //-- Process size column
-    try {
-      //-- there IS size column
-      c = row.getInt("Category");
-    } catch (Exception e) {
-      //-- there is NO category column in this data set
-      //-- OR there is a non-integer
-    }
-    
-    return c;
-}
-
-//-- category is always an int
-int getYearData(TableRow row) {
-   int y = startYear;
-
-   //-- Process size column
-    try {
-      //-- there IS size column
-      y = row.getInt("Year");
-    } catch (Exception e) {
-      //-- there is NO category column in this data set
-      //-- OR there is a non-integer
-    }
-    
-    return y;
-}
 
 
 void drawDatum(float x, float y, float dataSize) {
@@ -240,9 +208,9 @@ void drawDatum(float x, float y, float dataSize) {
   float drawX = map(x, (minLon - lonAdjust), (maxLon + lonAdjust), margin, width - margin);
   float drawY = map(y, (minLat - latAdjust), (maxLat + latAdjust), height - margin, margin) * 1.3333 - 100;
   
-  stroke(192);
-  strokeWeight(2);
-  fill(100,250,50);
+  //stroke(192);
+  //strokeWeight(2);
+  //fill(100,250,50);
   
   //-- This is the stroke weight
   //strokeWeight(0);
@@ -253,12 +221,13 @@ void drawDatum(float x, float y, float dataSize) {
   // adjust our size 
    dataSize = dataSize / 10000;
    
-   
+  fill(255,0,0);
+  
   //-- draw reactangle
-  rect(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
+  //rect(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
   
   // draw circle
-  //ellipse(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
+  ellipse(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
 }
 
 void keyPressed() {

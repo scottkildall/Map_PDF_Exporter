@@ -1,17 +1,7 @@
 /*
-  Map_PDF_Exporter
-  Written by Scott Kildall
-  September 2017
-  
-  Renders out a simple CSV file to (x,y) points on the screen
-  Looks for 2 header columns: "Latitude" and "Longitude"
-  
-  This version includes a "Size" field
-  
-  Output file is: data_output.pdf
-  Input file is: data_input.csv
-  
-  Spacebar will save the file
+  Map_PDF_ExporterSFCrome
+ 
+  Based on Map_
   
 */
 
@@ -169,24 +159,12 @@ void drawAllData() {
     float x = row.getFloat("Longitude");
     float y = row.getFloat("Latitude");
     
-    //-- OUR CUSTOM ROTUINES GO HERE
-    float s = getSizeData(row);       // size
-    
-    
-    // some examples
-    //int c = getCategoryData(row);   // category 
-    int year = getYearData(row);
-   
-    String nplStatus = getNPLStatusData(row);
+    //-- OUR CUSTOM DATA-FETCHING ROUTINES GO HERE
+    String crimeType = getCrimeTypeData(row);
      
     //-- draw data point here
-    // MODIFY THIS FUNCTION
-    drawDatum(x,y, nplStatus);
+    drawDatum(x,y, crimeType);
   }
-  
-  //-- draw home
-  //fill(255,0,0);
-  //ellipse(homeX, homeY, 10,10);
 }
 
 //-- read .size column, if there is none, then we use a default size variable (global)
@@ -207,70 +185,27 @@ float getSizeData(TableRow row) {
     return s;
 }
 
-//-- read .category column, if there is none, then we use a default category
-//-- category is always an int
-int getCategoryData(TableRow row) {
-   int c = defaultCategoryNum;
 
-   //-- Process size column
-    try {
-      //-- there IS size column
-      c = row.getInt("Category");
-    } catch (Exception e) {
-      //-- there is NO category column in this data set
-      //-- OR there is a non-integer
-    }
-    
-    return c;
-}
-
-String getNPLStatusData(TableRow row) {
+String getCrimeTypeData(TableRow row) {
    String s = "";
    
    //-- Process size column
     try {
-      //-- there IS size column
-      s = row.getString("NPL Status");
+       // this is the name of the string
+      s = row.getString("Types of crime");
     } catch (Exception e) {
-      //-- there is NO category column in this data set
-      //-- OR there is a non-integer
+      
     }
     
     return s;   
 }
 
-//--Types of crime
-
-//-- category is always an int
-int getYearData(TableRow row) {
-   int y = startYear;
-
-   //-- Process size column
-    try {
-      //-- there IS size column
-      y = row.getInt("Year");
-    } catch (Exception e) {
-      //-- there is NO category column in this data set
-      //-- OR there is a non-integer
-    }
-    
-    return y;
-}
 
 
-void drawDatum(float x, float y, String nplStatus) {
-  
- 
- 
-  // numYears is in range 75 years
-  
-  //println(nplStatus);
-  
+void drawDatum(float x, float y, String crimeType) {
+  // adjust drawX and drawY for latlong
   float drawX = map(x, (minLon - lonAdjust), (maxLon + lonAdjust), margin, width - margin);
   float drawY = map(y, (minLat - latAdjust), (maxLat + latAdjust), height - margin, margin) * 1.3333 - 100;
-  
-  
-  //println(crimeType);
   
    //-- This is the stroke weight
   strokeWeight(0);
@@ -278,41 +213,32 @@ void drawDatum(float x, float y, String nplStatus) {
   //-- This is the color
   stroke(128,128,128);
   
-  int dataSize = 5;
-  
-  //-- This is our fill color
-  // YEAR EXAMPLE
-  //fill(255,50,50, 255-(4*numYears));
- 
-  if( nplStatus.equals("Proposed NPL") ) {
+  //-- This is our fill color, based on the type of crime
+  if( crimeType.equals("Violent Crime") ) {
     fill(255,50,50);
   }
-  else if( nplStatus.equals("Final NPL") ) {
+  else if( crimeType.equals("Misdemeanors") ) {
     fill(50,255,50);
   }
-  else if( nplStatus.equals("Deleted NPL") ) {
+  else if( crimeType.equals("Other") ) {
     fill(50,255,255);
   }
-  else if( nplStatus.equals("Not NPL") ) {
+  else if( crimeType.equals("General Accidents (Not Crimes)") ) {
     fill(50,50,255);
   }
-  
+  else if( crimeType.equals("Felonies") ) {
+    fill(255,255,50);
+  }
   else {
     fill(128,128,128);
   }
- 
- 
   
-  // adjust our size 
- // dataSize = dataSize / 15000;
-   
    
   //-- draw reactangle
   //rect(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
   
-  // draw circle
-  ellipse(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
-  
+  // draw circle with 5 pixels in diameter
+  ellipse(drawX, drawY, 5, 5); // Constraint of where circles appear and size of circles 
 }
 
 void keyPressed() {
