@@ -61,7 +61,9 @@ float latAdjust;
 void setup() {
   //-- right now width and height have to be the same, otherwise it won't map properly
   //-- set to something like (2400,2400) for a large image
-  size(800,800);
+  size(2400,2400);
+  noSmooth();
+
   
   //-- change for actual output
   //size(2400,2400);
@@ -260,7 +262,13 @@ void drawDatum(float x, float y, float dataSize,int year) {
 
   float alphaValue = map(year, minYear, maxYear, alphaMin, alphaMax);
    
-  fill(255,0,0,alphaValue);
+  fill(248, 92, 18, alphaValue); // #1AD9D9 with transparency
+  noStroke();
+for (int i = 3; i > 0; i--) {
+  fill(248, 92, 18, alphaValue / (i * 2));
+  ellipse(drawX, drawY, dataSize + i * 4, dataSize + i * 4);
+}
+
   
   //-- draw reactangle
   //rect(drawX, drawY, dataSize, dataSize); // Constraint of where circles appear and size of circles 
